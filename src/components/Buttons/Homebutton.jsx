@@ -2,7 +2,7 @@
 const Homebutton=() =>{
     return(
         <>
-            <div className='text-center text-white  w-4/12 mx-auto cursor-pointer '>
+            <div className='text-center text-white  md:w-4/12  mx-auto cursor-pointer '>
                 <a href='/' className='button text-xl'>Read More</a>
             </div>
             <style jsx>{`

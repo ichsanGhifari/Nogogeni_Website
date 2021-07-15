@@ -13,7 +13,7 @@ const Navbar = ({toggle})=>{
     return (
 		<div className='absolute'>
 		<Nav>
-			<div className='w-screen flex flex-row justify-between px-5' >
+			<div className='w-screen flex flex-row justify-between px-5 md:py-0 py-2' >
 				<NavLogo to='/'><img alt='' src={logo}></img></NavLogo>
 				<MobileIcon onClick={toggle}>
 					<FaBars />
