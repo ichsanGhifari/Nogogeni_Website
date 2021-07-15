@@ -11,6 +11,7 @@ import logo from '../../images/LogoNogen.png'
 
 const Navbar = ({toggle})=>{
     return (
+		<div className='absolute'>
 		<Nav>
 			<div className='w-screen flex flex-row justify-between px-5' >
 				<NavLogo to='/'><img alt='' src={logo}></img></NavLogo>
@@ -36,6 +37,7 @@ const Navbar = ({toggle})=>{
 				</NavMenu>
 			</div>    
 		</Nav>        
+		</div>
     )
 }
 export default Navbar
