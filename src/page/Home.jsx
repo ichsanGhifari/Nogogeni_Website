@@ -2,7 +2,6 @@ import React,{useState} from 'react';
 import f1 from '../images/home/f1.png'
 import bg1 from '../images/bgitem.png'
 import Navbar from "../components/Navbar/index"
-import Sidebar from '../components/Sidebar/index';
 import b2 from '../images/home/bgmerah.png';
 import el1 from '../images/home/Electric1.png';
 import et1 from '../images/home/Etanol1.png';
@@ -26,7 +25,6 @@ const Home=()=> {
     return (
         <section className='h-screen'>
         <Navbar toggle={toggle} />
-        <Sidebar isOpen={isOpen} toggle={toggle} />
         <Swiper cssMode={true} navigation={true} loop={true} pagination={true} mousewheel={true} keyboard={true} className="mySwiper">
             <SwiperSlide>
             <img alt='' className='backg' src={bg1}></img>
