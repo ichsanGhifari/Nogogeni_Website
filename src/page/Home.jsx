@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import {Link} from 'react-router-dom';
 import f1 from '../images/home/f1.png'
 import bg1 from '../images/bgitem.png'
 import Navbar from "../components/Navbar/index"
@@ -13,7 +14,6 @@ import "swiper/components/pagination/pagination.min.css"
 import SwiperCore, {
     Navigation,Pagination,Mousewheel,Keyboard
   } from 'swiper/core';
-import Homebutton from '../components/Buttons/Homebutton';
 
 
 SwiperCore.use([Navigation,Pagination,Mousewheel,Keyboard]);
@@ -28,43 +28,55 @@ const Home=()=> {
         <Swiper cssMode={true} navigation={true} loop={true} pagination={true} mousewheel={true} keyboard={true} className="mySwiper">
             <SwiperSlide>
             <img alt='' className='backg' src={bg1}></img>
-            <div className='z-10 flex flex-col mx-auto p-10 mt-14'>    
-                <div className='flex flex-col space-y-0 md:-space-y-24'>
+            <div className='z-10 flex flex-col gap-y-32 md:gap-y-0 mx-auto md:p-10 p-0 md:mt-14 mt-5  '>    
+                <div className='flex flex-col space-y-16 md:-space-y-24'>
                     <div className='flex text-title flex-col  text-center italic'>
                         <h3 style={{letterSpacing: "0.25em"}} 
-                        className='text-2xl md:text-5xl'>NOGOGENI RACING</h3>
-                        <h1 className='text-5xl md:text-9xl' >MARK I</h1>
+                        className='text-xl md:text-5xl sm:text-2xl '>NOGOGENI RACING</h3>
+                        <h1 className='text-6xl md:text-9xl' >MARK I</h1>
                     </div>
-                    <img className='z-10 mx-auto' width="900px" alt ='' src={f1}></img>
+                    <div className=' md:ml-0 ml-5 '>
+                        <img className='mx-auto transform md:rotate-0 -rotate-90 md:w-full w-max' alt ='' src={f1}></img>
+                    </div>
                 </div>
-                <Homebutton />
+                <div className='mx-auto z-30'>
+                <Link to='/Mark1' className='Homebutton text-white text-2xl'>Read More</Link>
+                </div>
             </div>
             </SwiperSlide>
             <SwiperSlide>
             <img alt='' className='backg' src={b2}></img>
-            <div className='z-10 flex flex-col mx-auto p-10 mt-14'>    
-                <div className='flex flex-col space-y-0 md:-space-y-24'>
+            <div className='z-10 flex flex-col gap-y-28 md:gap-y-0 mx-auto md:p-10 p-0 md:mt-14 '>    
+                <div className='flex flex-col space-y-16 md:-space-y-24'>
                     <div className='flex text-title flex-col  text-center italic'>
                         <h3 style={{letterSpacing: "0.25em"}} 
                         className='text-2xl md:text-5xl'>NOGOGENI V</h3>
-                        <h1 className='text-5xl md:text-9xl' >EVO</h1>
+                        <h1 className='text-6xl md:text-9xl' >EVO</h1>
                     </div>
-                    <img className='z-10 mx-auto' width="900px" alt ='' src={el1}></img>
+                    <div className='w-full'>
+                        <img className='mx-auto transform md:rotate-0 -rotate-90 md:w-full w-max' alt ='' src={el1}></img>
+                    </div>
                 </div>
-                <Homebutton />
+                <div className='mx-auto'>
+                    <Link to='/NogogeniEvo' className='Homebutton text-white text-2xl'>Read More</Link>
+                </div>
             </div>
             </SwiperSlide>
             <SwiperSlide>
                 <img alt='' className='backg' src={bg1}></img>
-                <div className='z-10 flex flex-col mx-auto p-10 mt-14'>    
-                    <div className='flex flex-col space-y-0 md:-space-y-2'>
+                <div className='z-10 flex flex-col gap-y-32 md:gap-y-0 mx-auto md:p-10 p-0 md:mt-14 mt-5'>    
+                    <div className='flex flex-col space-y-24 md:-space-y-2'>
                         <div className='flex text-title flex-col  text-center italic'>
                             <h3 style={{letterSpacing: "0.25em"}} 
                             className='text-2xl md:text-5xl'>NOGOGENI V</h3>
                         </div>
-                        <img className='z-10 mx-auto' width="800px" alt ='' src={et1}></img>
+                        <div className='w-full'>
+                            <img className=' w-max mx-auto transform md:rotate-0 -rotate-90 md:w-full'  alt ='' src={et1}></img>
+                        </div>
                     </div>
-                    <Homebutton />
+                    <div className='mx-auto'>
+                        <Link to='/NogogeniM2' className='Homebutton text-white text-2xl'>Read More</Link>
+                    </div>
                 </div>
             </SwiperSlide>
         </Swiper>
@@ -126,6 +138,19 @@ const Home=()=> {
             .swiper-pagination-bullet-active {
                 color:#fff;
                 background: #fff;
+            }
+            .Homebutton{
+            transition: all 0.5s;
+            margin: 5px;
+            text-decoration: none;
+            display: inline-block;
+            height: 50px;
+            width: 150px;
+            line-height:50px;
+            text-align: center;
+            }
+            .Homebutton:hover{
+                box-shadow: 0 -3px white,0 3px white; 
             }
             `}</style>
             

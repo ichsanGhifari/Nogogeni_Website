@@ -18,6 +18,7 @@ module.exports = {
       },
       backgroundImage: theme => ({
         'bghero': "url('/src/images/bgitem.png')",
+        'bgherosecond': "url('/src/images/home/bgmerah.png')"
       }),
     },
   },

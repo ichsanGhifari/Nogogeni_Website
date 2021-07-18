@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React from 'react';
 import {Nav,
 	NavLogo,
 	MobileIcon,
@@ -10,15 +10,15 @@ import {Nav,
 import { Squash as Hamburger } from 'hamburger-react'
 import logo from '../../images/LogoNogen.png'
 import { Menu,Transition, Disclosure } from '@headlessui/react'
-import { motion } from "framer-motion"
+// import { motion } from "framer-motion"
 
-const variants = {
-  open: { opacity: 1, x: 0 },
-  closed: { opacity: 0, x: "-100%" },
-}
+// const variants = {
+//   open: { opacity: 1, x: 0 },
+//   closed: { opacity: 0, x: "-100%" },
+// }
 
 const Navbar = ({toggle})=>{
-	const [isOpen, setIsOpen] = useState(false)
+	// const [isOpen, setIsOpen] = useState(false)
     return (
 		<div className='absolute overflow-visi'>
 		<Nav>
@@ -31,44 +31,55 @@ const Navbar = ({toggle})=>{
 						<Hamburger className='z-30'></Hamburger>
 					</Disclosure.Button>
 					<Transition
-						enter="transition duration-1000 opacity-0  "
-						enterFrom="transform scale-1000 translate-x-96 "
-						enterTo="transform scale-100 opacity-100 "
+						enter="transition duration-75 opacity-100 "
+						enterFrom="transform scale-100 opacity-100 "
+						enterTo="transform scale-100 opactiy-100 "
 						leave="transition duration-1000 opacity-0 "
-						leaveFrom="transform scale-1000 translate-x-96 "
+						leaveFrom="transform scale-100 translate-x-96 "
 						leaveTo="transform scale-100 translate-x-96 "
 					>
 					<Disclosure.Panel className=" h-screen py-20 px-10 sidebar absolute -left-40 z-20 -mt-5 ">
-						<div className='text-2xl flex flex-col gap-5'>
+						<div className='text-2xl mt-5 flex flex-col gap-5'>
 							<NavLinksChild>Home</NavLinksChild>
-							<NavLinksChild>Home</NavLinksChild>
-							<NavLinksChild>Home</NavLinksChild>
-							<NavLinksChild>Home</NavLinksChild>
-							<NavLinksChild>Home</NavLinksChild>
+							<Disclosure>
+								<Disclosure.Button>
+									<h2 className='italic font-extralight text-left'>About</h2>
+								</Disclosure.Button>
+								<Transition
+								enter="transition duration-100 opacity-0  "
+								enterFrom="transform scale-100 opacity-10 "
+								enterTo="transform scale-100 opacity-100 "
+								leave="transition duration-100 opacity-0 "
+								leaveFrom="transform scale-100 opacity-10 "
+								leaveTo="transform scale-100 opacity-0 ">
+									<Disclosure.Panel>
+									<div className='flex flex-col gap-3 ml-5 -mt-3 text-lg'>
+										<NavLinksChild>Team</NavLinksChild>
+										<NavLinksChild>Event</NavLinksChild>
+										<NavLinksChild>Staff</NavLinksChild>
+										<NavLinksChild>Testimonial</NavLinksChild>
+									</div>
+									</Disclosure.Panel>
+								</Transition>
+							</Disclosure>
+							<NavLinksChild>Achievment</NavLinksChild>
+							<NavLinksChild>Partner</NavLinksChild>
+							<NavLinksChild>Gallery</NavLinksChild>
+							<NavLinksChild>Contact</NavLinksChild>
 						</div>
 					</Disclosure.Panel>
 					</Transition>
 					</div>
 				</Disclosure>
-					
-				</MobileIcon>				
+				</MobileIcon>
+
 				<NavMenu>
 					<NavItem>
 						<NavLinks to='Home' className='transform translate-y-0'>Home</NavLinks>
 					</NavItem>
-					<Disclosure >
-					<Transition
-						enter="transition duration-1000 opacity-0 "
-						enterFrom="transform scale-100 translate-x-2/3 "
-						enterTo="transform scale-1000 opacity-100 delay-100 "
-						leave="transition duration-1000 opacity-0 "
-						leaveFrom="transform scale-1000 translate-x-96 "
-						leaveTo="transform scale-100 translate-x-96 "
-					>
-						<Disclosure.Panel className='flex flex-row'>
 							<Menu >
 								<div className='grid-cols-1 flex-grow-0 '>
-								<Menu.Button className='italic text-white px-4 mt-5 h-1/2 '>About</Menu.Button>
+								<Menu.Button className='italic text-white px-4 h-1/2 '>About</Menu.Button>
 								<Transition
 								enter="transition duration-100 ease-out"
 								enterFrom="transform scale-95 opacity-0"
@@ -114,12 +125,6 @@ const Navbar = ({toggle})=>{
 						<NavItem>
 							<NavLinks to='service'>Contact</NavLinks>
 						</NavItem>
-					</Disclosure.Panel>
-					</Transition>
-					<Disclosure.Button className="py-2 ">
-        				<Hamburger color="#fff"></Hamburger>
-					</Disclosure.Button>
-				</Disclosure>    
 				</NavMenu>
 			</div>
 		</Nav>
