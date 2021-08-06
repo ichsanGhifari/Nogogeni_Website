@@ -7,8 +7,10 @@ import steering from '../icons/Steering1.png'
 import wheel from '../icons/Wheels1.png'
 import Tires from '../icons/Tires1.png'
 import transmition from '../icons/Transmisions1.png'
+import isometri1 from '../images/home/isometri/Isometri11.png'
+import isometri2 from '../images/home/isometri/Isometri21.png'
 
-import React, { useState } from 'react';
+import React, { useState} from 'react';
 
 const Mark1 = () =>{
     const [slider, setSlider] = useState(false);
@@ -25,42 +27,49 @@ const Mark1 = () =>{
                 <img alt='' src={rangka2bot} className={`${slider?"border-0":"border-2 border-white"}`} onClick={()=>setSlider(false)}></img>
                 </div>
             </div>
-            <div className='text-white w-max right-40 inset-y-1/4 absolute px-10 2xl:right-64'>
+            {/* swap */}
+            <div className={`text-white w-max right-40 absolute px-10 2xl:right-64 overflow-hidden ${slider?"inset-y-36":"inset-y-32"}`}>
                 <div className='flex flex-col gap-3'>
                     <div className='flex flex-row cursor-pointer gap-3'>
                         <img src={back} alt='' className='border-2 border-white rounded-full w-8'></img>
                         <p className='italic font-medium text-xl my-auto'>Back</p>
                     </div>
-                    <h2 className='italic text-title  '>NOGOGENI RACING <br />MARK 1</h2>
-                    <p className='text-title font-bold'>This car has a Husaberg 450 FE engine with a <br />
-                    single cylinder RON 98 fuel type. The chassis <br />
-                    structure is made of Steel Tube Spaceframe and,<br/> 
-                    with a brake system using hydraulic disc brakes.</p>
-                    <div className='flex flex-row gap-5'>
-                        <div className='flex flex-col gap-2'>
-                            <img alt='' src={steering}></img>
-                            <img alt='' src={transmition}></img>
-                        </div>
-                        <div className='flex flex-col gap-5 mt-2 italic font-bold text-title'>
-                            <p>Rack and Pinion Steering System</p>
-                            <p>Sprocket &amp; Chain with Manual Shifter</p>
-                        </div>
-                    </div>
-                    <div className='flex flex-row gap-4'>
-                        <div className='flex flex-col'>
-                            <p className='text-title italic font-bold text title'>Wheels</p>
-                            <div className='bg-title p-3 flex flex-row gap-3'>
-                                <img alt='' src={wheel}></img>
-                                <p className='italic my-auto text-black'>6,4" Wide</p>
+                    <h2 className='italic text-title'>NOGOGENI RACING <br />MARK 1</h2>
+                    <div className={`${slider?"fadeIn":"fadeOut"}`}>
+                        <p className='text-title font-bold'>This car has a Husaberg 450 FE engine with a <br />
+                            single cylinder RON 98 fuel type. The chassis <br/>
+                            structure is made of Steel Tube Spaceframe and,<br/> 
+                            with a brake system using hydraulic disc brakes.</p>
+                        <div className='flex flex-row gap-5'>
+                            <div className='flex flex-col gap-2'>
+                                <img alt='' src={steering}></img>
+                                <img alt='' src={transmition}></img>
+                            </div>
+                            <div className='flex flex-col gap-5 mt-2 italic font-bold text-title'>
+                                <p>Rack and Pinion Steering System</p>
+                                <p>Sprocket &amp; Chain with Manual Shifter</p>
                             </div>
                         </div>
-                        <div className='flex flex-col'>
-                            <p className='text-title italic font-bold text title'>Tires</p>
-                            <div className='bg-title p-3 flex flex-row gap-3'>
-                                <img alt='' src={Tires}></img>
-                                <p className='italic my-auto text-black'>180/60 R13 Hoosier</p>
+                        <div className='flex flex-row gap-4'>
+                            <div className='flex flex-col'>
+                                <p className='text-title italic font-bold text title'>Wheels</p>
+                                <div className='bg-title p-3 flex flex-row gap-3'>
+                                    <img alt='' src={wheel}></img>
+                                    <p className='italic my-auto text-black'>6,4" Wide</p>
+                                </div>
+                            </div>
+                            <div className='flex flex-col'>
+                                <p className='text-title italic font-bold text title'>Tires</p>
+                                <div className='bg-title p-3 flex flex-row gap-3'>
+                                    <img alt='' src={Tires}></img>
+                                    <p className='italic my-auto text-black'>180/60 R13 Hoosier</p>
+                                </div>
                             </div>
                         </div>
+                    </div>  
+                    <div className={`flex flex-col gap-5 overflow-hidden ${slider?"fadeOut":"fadeIn"}`}>
+                        <img alt='' src={isometri1}></img>
+                        <img alt='' src={isometri2} />
                     </div>
                 </div>
             </div>
@@ -70,6 +79,17 @@ const Mark1 = () =>{
                     position:absolute;
                     top:32%;
                     left:5%;
+                }
+                .fadeOut{
+                    opacity:0;
+                    width:0;
+                    height:0;
+                    transition:  opacity 0s 0s;
+                }
+                .fadeIn{
+                    opacity:1;
+                    delay:1s;
+                    transition:  opacity .5s .1s;
                 }
              `}</style>
         </section>
