@@ -11,6 +11,7 @@ import isometri1 from '../images/home/isometri/Isometri11.png'
 import isometri2 from '../images/home/isometri/Isometri21.png'
 
 import React, { useState} from 'react';
+import {Link} from "react-router-dom"
 
 const Mark1 = () =>{
     const [slider, setSlider] = useState(false);
@@ -23,24 +24,24 @@ const Mark1 = () =>{
             </div>
             <div className='slicer'>
                 <div className='flex flex-col cursor-pointer'>
-                <img alt='' src={rangka1} className={`${slider?"border-2 border-white":"border-0"}`} onClick={()=>setSlider(true)}></img>
-                <img alt='' src={rangka2bot} className={`${slider?"border-0":"border-2 border-white"}`} onClick={()=>setSlider(false)}></img>
+                    <img alt='' src={rangka1} className={`${slider?"border-2 border-white":"border-0"}`} onClick={()=>setSlider(true)}></img>
+                    <img alt='' src={rangka2bot} className={`${slider?"border-0":"border-2 border-white"}`} onClick={()=>setSlider(false)}></img>
                 </div>
             </div>
             {/* swap */}
-            <div className={`text-white w-max right-40 absolute px-10 2xl:right-64 overflow-hidden ${slider?"inset-y-36":"inset-y-32"}`}>
+            <div className={`text-white right-44 absolute overflow-hidden h-3/4 2xl:right-80 inset-y-44 2xl:inset-y-56`}>
                 <div className='flex flex-col gap-3'>
-                    <div className='flex flex-row cursor-pointer gap-3'>
+                    <Link to="/" className='flex flex-row cursor-pointer gap-3 w-max'>
                         <img src={back} alt='' className='border-2 border-white rounded-full w-8'></img>
                         <p className='italic font-medium text-xl my-auto'>Back</p>
-                    </div>
+                    </Link >
                     <h2 className='italic text-title'>NOGOGENI RACING <br />MARK 1</h2>
-                    <div className={`${slider?"fadeIn":"fadeOut"}`}>
+                    <div className={`transform-gpu duration-700 ${slider?"translate-x-full h-0 opacity-0":"delay-100 -translate-x-0 h-0 opacity-100"}`}>
                         <p className='text-title font-bold'>This car has a Husaberg 450 FE engine with a <br />
                             single cylinder RON 98 fuel type. The chassis <br/>
                             structure is made of Steel Tube Spaceframe and,<br/> 
                             with a brake system using hydraulic disc brakes.</p>
-                        <div className='flex flex-row gap-5'>
+                        <div className='flex flex-row gap-5 mt-2'>
                             <div className='flex flex-col gap-2'>
                                 <img alt='' src={steering}></img>
                                 <img alt='' src={transmition}></img>
@@ -50,7 +51,7 @@ const Mark1 = () =>{
                                 <p>Sprocket &amp; Chain with Manual Shifter</p>
                             </div>
                         </div>
-                        <div className='flex flex-row gap-4'>
+                        <div className='flex flex-row gap-5 mt-1'>
                             <div className='flex flex-col'>
                                 <p className='text-title italic font-bold text title'>Wheels</p>
                                 <div className='bg-title p-3 flex flex-row gap-3'>
@@ -67,7 +68,7 @@ const Mark1 = () =>{
                             </div>
                         </div>
                     </div>  
-                    <div className={`flex flex-col gap-5 overflow-hidden ${slider?"fadeOut":"fadeIn"}`}>
+                    <div className={`flex flex-col gap-5 transform-gpu duration-700  ${slider?"translate-x-0 opacity-100 delay-100":"-translate-x-full h-0 opacity-0"}`}>
                         <img alt='' src={isometri1}></img>
                         <img alt='' src={isometri2} />
                     </div>
@@ -89,6 +90,8 @@ const Mark1 = () =>{
                 .fadeIn{
                     opacity:1;
                     delay:1s;
+                    width:100%;
+                    height:100%;
                     transition:  opacity .5s .1s;
                 }
              `}</style>
