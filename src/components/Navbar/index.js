@@ -22,7 +22,7 @@ const Navbar = ({toggle})=>{
     return (
 		<div className='absolute overflow-visi'>
 		<Nav>
-			<div className='w-screen flex flex-row md:justify-between justify-center  px-5 md:py-0 py-2 ' >
+			<div className='w-screen flex flex-row md:justify-between justify-center px-5 md:py-0 py-5 ' >
 				<NavLogo to='/'><img alt='' src={logo} className='md:pt-0 pt-5'></img></NavLogo>
 				<MobileIcon>
 				<Disclosure>

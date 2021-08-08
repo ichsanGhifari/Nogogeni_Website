@@ -13,6 +13,7 @@ export const Nav = styled.nav`
     z-index:10;
     @media screen and (max-widht:950px){
         transisiton:0.7s all ease;
+        height:50px;
     }
 `;
 export const NavbarContainer = styled.div`
@@ -43,7 +44,7 @@ display:none;
     display:block;
     position:absolute;
     top:-20px;
-    right:-30px;
+    right:-25px;
     transform: translate(-100%,60%);
     font-size:1.8rem;
     cursor:pointer;
