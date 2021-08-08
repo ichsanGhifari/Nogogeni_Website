@@ -77,7 +77,7 @@ const Mark1 = () => {
               This car has a Husaberg 450 FE engine with a <br />
               single cylinder RON 98 fuel type. The chassis <br />
               structure is made of Steel Tube Spaceframe and, 
-              <br className='md:visible hidden' />
+              <br className='md:inline hidden' />
               &nbsp;with a brake system using hydraulic disc brakes.
             </p>
             <div className="flex flex-row gap-5 mt-2">
@@ -130,7 +130,7 @@ const Mark1 = () => {
         @media (max-width: 768px) {
         .slicer {
           top: 70%;
-          left: 33%;
+          left: 30%;
         }
         }
       `}</style>
