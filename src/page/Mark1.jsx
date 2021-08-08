@@ -19,44 +19,46 @@ const Mark1 = () => {
     <section className="h-screen bg-bghero bg-cover bg-no-repeat overflow-hidden">
       <Navbar />
       <div
-        className={`left-20 2xl:left-60 relative transform-gpu duration-700 w-max ${
-          slider ? "translate-y-full top-20" : "-translate-y-20 -top-20"
+        className={`md:left-20 left-40 mt-16 2xl:left-60 top-auto relative transform-gpu duration-700 md:w-max ${
+          slider
+            ? "md:translate-y-full md:top-20 translate-x-full"
+            : "md:-translate-y-20 md:-top-20 translate-x-0"
         }`}
-        >
+      >
         <img
-          className={`transform -rotate-90`}
+          className={`transform md:-rotate-90 rotate-0`}
           width={"950px"}
           alt=""
           src={f1}
-          ></img>
+        ></img>
       </div>
-      <div className="slicer">
+      <div className="slicer transform rotate-90">
         <div className="flex flex-col cursor-pointer">
           <img
             alt=""
             src={rangka1}
             className={`${slider ? "border-2 border-white" : "border-0"}`}
             onClick={() => setSlider(true)}
-            ></img>
+          ></img>
           <img
             alt=""
             src={rangka2bot}
             className={`${slider ? "border-0" : "border-2 border-white"}`}
             onClick={() => setSlider(false)}
-            ></img>
+          ></img>
         </div>
       </div>
       {/* swap */}
       <div
-        className={`text-white right-44 absolute overflow-hidden h-3/4 2xl:right-80 inset-y-44 2xl:inset-y-56`}
-        >
+        className={`text-white md:right-44 right-0 w-max md:top-0 top-1/3 absolute overflow-hidden md:h-3/4 2xl:right-80 inset-y-44 2xl:inset-y-56`}
+      >
         <div className="flex flex-col gap-3">
           <Link to="/" className="flex flex-row cursor-pointer gap-3 w-max">
             <img
               src={back}
               alt=""
               className="border-2 border-white rounded-full w-8"
-              ></img>
+            ></img>
             <p className="italic font-medium text-xl my-auto">Back</p>
           </Link>
           <h2 className="italic text-title">
@@ -66,10 +68,10 @@ const Mark1 = () => {
           <div
             className={`transform-gpu duration-700 ${
               slider
-              ? "translate-x-full h-0 opacity-0"
-              : "delay-100 -translate-x-0 h-0 opacity-100"
+                ? "translate-x-full h-0 opacity-0"
+                : "delay-100 -translate-x-0 h-0 opacity-100"
             }`}
-            >
+          >
             <p className="text-title font-bold">
               This car has a Husaberg 450 FE engine with a <br />
               single cylinder RON 98 fuel type. The chassis <br />
@@ -89,18 +91,14 @@ const Mark1 = () => {
             </div>
             <div className="flex flex-row gap-5 mt-1">
               <div className="flex flex-col">
-                <p className="text-title italic font-bold text title">
-                  Wheels
-                </p>
+                <p className="text-title italic font-bold text title">Wheels</p>
                 <div className="bg-title p-3 flex flex-row gap-3">
                   <img alt="" src={wheel}></img>
                   <p className="italic my-auto text-black">6,4" Wide</p>
                 </div>
               </div>
               <div className="flex flex-col">
-                <p className="text-title italic font-bold text title">
-                  Tires
-                </p>
+                <p className="text-title italic font-bold text title">Tires</p>
                 <div className="bg-title p-3 flex flex-row gap-3">
                   <img alt="" src={Tires}></img>
                   <p className="italic my-auto text-black">
@@ -113,10 +111,10 @@ const Mark1 = () => {
           <div
             className={`flex flex-col gap-5 transform-gpu duration-700  ${
               slider
-              ? "translate-x-0 opacity-100 delay-100"
-              : "-translate-x-full h-0 opacity-0"
+                ? "translate-x-0 opacity-100 delay-100"
+                : "-translate-x-full h-0 opacity-0"
             }`}
-            >
+          >
             <img alt="" src={isometri1}></img>
             <img alt="" src={isometri2} />
           </div>
@@ -127,6 +125,12 @@ const Mark1 = () => {
           position: absolute;
           top: 32%;
           left: 5%;
+        }
+        @media (max-width: 768px) {
+        }
+        .slicer {
+          top: 70%;
+          left: 33%;
         }
       `}</style>
     </section>
