@@ -26,19 +26,21 @@ const Navbar = ({toggle})=>{
 				<NavLogo to='/'><img alt='' src={logo} className='md:pt-0 pt-1'></img></NavLogo>
 				<MobileIcon>
 				<Disclosure>
-					<div className='flex flex-row'>
+					<div className='flex flex-row '>
 					<Disclosure.Button className="py-2 z-30">
 						<Hamburger className='z-30'></Hamburger>
 					</Disclosure.Button>
 					<Transition
-						enter="transform-gpu duration-1000"
-						enterFrom="transform-gpu translate-x-96 "
-						enterTo="transform-gpu translate-x-0"
-						leave="transform-gpu duration-1000 delay-1000"
-						leaveFrom="transform-gpu translate-x-0 "
+						appear={true}
+						enter="transform-gpu transition ease-in duration-1000"
+						enterFrom="translate-x-96 "
+						enterTo="transform-gpu translate-x-1"
+						entered="transform-gpu translate-x-spe"
+						leave="transform-gpu transition duration-1000 translate-x-10"
+						leaveFrom="transform-gpu translate-x-spe"
 						leaveTo="transform-gpu translate-x-96 "
 					>
-					<Disclosure.Panel className="h-screen py-20 px-10 sidebar absolute z-20">
+					<Disclosure.Panel className="absolute h-screen py-20 px-10 sidebar -right-5 z-20 ">
 						<div className='text-2xl mt-5 flex flex-col gap-5'>
 							<NavLinksChild>Home</NavLinksChild>
 							<Disclosure>
@@ -46,10 +48,10 @@ const Navbar = ({toggle})=>{
 									<h2 className='italic font-extralight text-left'>About</h2>
 								</Disclosure.Button>
 								<Transition
-								enter="transition duration-100 opacity-0  "
+								enter="transition ease-in duration-300 opacity-0  "
 								enterFrom="transform scale-100 opacity-10 "
 								enterTo="transform scale-100 opacity-100 "
-								leave="transition duration-100 opacity-0 "
+								leave="transition ease-out duration-300 opacity-0 "
 								leaveFrom="transform scale-100 opacity-10 "
 								leaveTo="transform scale-100 opacity-0 ">
 									<Disclosure.Panel>
@@ -82,11 +84,11 @@ const Navbar = ({toggle})=>{
 								<Menu.Button className='italic text-white px-4 h-1/2 '>About</Menu.Button>
 								<Transition
 								enter="transition duration-100 ease-out"
-								enterFrom="transform scale-95 opacity-0"
+								enterFrom="transform scale-0 opacity-0"
 								enterTo="transform scale-100 opacity-100"
 								leave="transition duration-75 ease-out"
 								leaveFrom="transform scale-100 opacity-100"
-								leaveTo="transform scale-95 opacity-0"
+								leaveTo="transform scale-0 opacity-0"
 								>	
 								<Menu.Items className=' flex-col flex italic absolute text-left px-4 mt-1 '>
 									<Menu.Item>
@@ -131,9 +133,9 @@ const Navbar = ({toggle})=>{
 		<style jsx>{`
 			.sidebar{
 				background-color:#1E1E1E;
-				width:225px;
+				width:255px;
 				overflow:hidden;
-				right:-48%;
+
 				top:-30%;
 			}
 		`}</style>
