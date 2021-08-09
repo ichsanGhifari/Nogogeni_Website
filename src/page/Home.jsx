@@ -11,6 +11,7 @@ import "swiper/swiper.min.css";
 import "swiper/components/navigation/navigation.min.css"
 import "swiper/components/pagination/pagination.min.css"
 
+
 import SwiperCore, {
     Navigation,Pagination,Mousewheel,Keyboard
   } from 'swiper/core';
@@ -22,62 +23,77 @@ const Home=()=> {
     const toggle = () =>{
         setIsOpen(!isOpen);
     };
+    // const[slider1,setSlider1] = useState(false);
+
     return (
         <section className='h-screen'>
         <Navbar toggle={toggle} />
         <Swiper cssMode={true} navigation={true} loop={true} pagination={true} mousewheel={true} keyboard={true} className="mySwiper">
+        
             <SwiperSlide>
-            <img alt='' className='backg' src={bg1}></img>
-            <div className='z-10 flex flex-col gap-y-32 md:gap-y-0 mx-auto md:p-10 p-0 md:mt-14 mt-5  '>    
-                <div className='flex flex-col space-y-16 md:-space-y-24'>
-                    <div className='flex text-title flex-col  text-center italic'>
-                        <h3 style={{letterSpacing: "0.25em"}} 
-                        className='text-xl md:text-5xl sm:text-2xl '>NOGOGENI RACING</h3>
-                        <h1 className='text-6xl md:text-9xl' >MARK I</h1>
-                    </div>
-                    <div className=' md:ml-0 ml-5 '>
-                        <img className='mx-auto transform md:rotate-0 -rotate-90 md:w-full w-max' alt ='' src={f1}></img>
-                    </div>
-                </div>
-                <div className='mx-auto z-30'>
-                <Link to='/Mark1' className='Homebutton text-white text-2xl'>Read More</Link>
-                </div>
-            </div>
-            </SwiperSlide>
-            <SwiperSlide>
-            <img alt='' className='backg' src={b2}></img>
-            <div className='z-10 flex flex-col gap-y-28 md:gap-y-0 mx-auto md:p-10 p-0 md:mt-14 '>    
-                <div className='flex flex-col space-y-16 md:-space-y-24'>
-                    <div className='flex text-title flex-col  text-center italic'>
-                        <h3 style={{letterSpacing: "0.25em"}} 
-                        className='text-2xl md:text-5xl'>NOGOGENI V</h3>
-                        <h1 className='text-6xl md:text-9xl' >EVO</h1>
-                    </div>
-                    <div className='w-full'>
-                        <img className='mx-auto transform md:rotate-0 -rotate-90 md:w-full w-max' alt ='' src={el1}></img>
-                    </div>
-                </div>
-                <div className='mx-auto'>
-                    <Link to='/NogogeniEvo' className='Homebutton text-white text-2xl'>Read More</Link>
-                </div>
-            </div>
-            </SwiperSlide>
-            <SwiperSlide>
+            {({ isActive }) => (
+            <div>
                 <img alt='' className='backg' src={bg1}></img>
-                <div className='z-10 flex flex-col gap-y-32 md:gap-y-0 mx-auto md:p-10 p-0 md:mt-14 mt-5'>    
-                    <div className='flex flex-col space-y-24 md:-space-y-2'>
-                        <div className='flex text-title flex-col  text-center italic'>
+                <div className='z-10 flex flex-col gap-y-32 md:gap-y-0 mx-auto md:p-10 p-0 md:mt-14 mt-5  '>  
+                    <div className={`flex flex-col space-y-16 md:-space-y-24`}>
+                        <div className={`flex text-title flex-col text-center italic transform-gpu duration-700 transition ${isActive?"translate-x-0 opacity-100":"translate-x-96 opacity-0"} }`}>
+                            <h3 style={{letterSpacing: "0.25em"}} 
+                            className='text-xl md:text-5xl sm:text-2xl'>NOGOGENI RACING</h3>
+                            <h1 className='text-6xl md:text-9xl' >MARK I</h1>
+                        </div>
+                        <div className={` md:ml-0 ml-5 transform-gpu duration-700  ${isActive?"translate-x-0 opacity-100":"md:-translate-x-96 -translate-x-32 opacity-0"}  `}>
+                            <img className='mx-auto transform md:rotate-0 -rotate-90 md:w-full w-max' alt ='' src={f1}></img>
+                        </div>
+                    </div>
+                    <div className={`mx-auto z-30 transition-opacity duration-1000 ${isActive?"opacity-100":"opacity-0"}`}>
+                        <Link to='/Mark1' className='Homebutton text-white text-2xl'>Read More</Link>
+                    </div>
+                </div> 
+            </div>
+            )}
+            </SwiperSlide>
+            <SwiperSlide>
+            {({isActive}) => (
+            <div>
+                <img alt='' className='backg' src={b2}></img>
+                <div className='z-10 flex flex-col gap-y-28 md:gap-y-0 mx-auto md:p-10 p-0 md:mt-14 '>    
+                    <div className={`flex flex-col space-y-16 md:-space-y-24 `}>
+                        <div className={`flex text-title flex-col  text-center italic transform-gpu duration-700 transition ${isActive?"translate-x-0 opacity-100":"translate-x-96 opacity-0"}`}>
                             <h3 style={{letterSpacing: "0.25em"}} 
                             className='text-2xl md:text-5xl'>NOGOGENI V</h3>
+                            <h1 className='text-6xl md:text-9xl' >EVO</h1>
                         </div>
-                        <div className='w-full'>
-                            <img className=' w-max mx-auto transform md:rotate-0 -rotate-90 md:w-full'  alt ='' src={et1}></img>
+                        <div className={`w-full transform duration-700 ${isActive?"translate-x-0 opacity-100":"md:-translate-x-96 -translate-x-32 opacity-0"} `}>
+                            <img className='mx-auto transform md:rotate-0 -rotate-90 md:w-full w-max' alt ='' src={el1}></img>
                         </div>
                     </div>
-                    <div className='mx-auto'>
-                        <Link to='/NogogeniM2' className='Homebutton text-white text-2xl'>Read More</Link>
+                    <div className={`mx-auto z-30 transition-opacity duration-1000 ${isActive?"opacity-100":"opacity-0"}`}>
+                        <Link to='/NogogeniEvo' className='Homebutton text-white text-2xl'>Read More</Link>
                     </div>
                 </div>
+            </div>
+            )}
+            </SwiperSlide>
+            <SwiperSlide>
+                {({isActive}) => (
+                    <div>
+                    <img alt='' className='backg' src={bg1}></img>
+                    <div className='z-10 flex flex-col gap-y-32 md:gap-y-0 mx-auto md:p-10 p-0 md:mt-14 mt-5'>    
+                        <div className='flex flex-col space-y-24 md:-space-y-2'>
+                            <div className={`flex text-title flex-col  text-center italic transform-gpu duration-700 transition ${isActive?"translate-x-0 opacity-100":"translate-x-96 opacity-0"}`}>
+                                <h3 style={{letterSpacing: "0.25em"}} 
+                                className='text-2xl md:text-5xl'>NOGOGENI V</h3>
+                            </div>
+                            <div className={`w-full transform duration-700 ${isActive?"translate-x-0 opacity-100":"md:-translate-x-96 -translate-x-32 opacity-0"}`}>
+                                <img className=' w-max mx-auto transform md:rotate-0 -rotate-90 md:w-full'  alt ='' src={et1}></img>
+                            </div>
+                        </div>
+                        <div className={`mx-auto z-30 transition-opacity duration-1000 ${isActive?"opacity-100":"opacity-0"} `}>
+                            <Link to='/NogogeniM2' className='Homebutton text-white text-2xl'>Read More</Link>
+                        </div>
+                    </div>
+                    </div>
+                )}
             </SwiperSlide>
         </Swiper>
         <style jsx>{`
@@ -105,6 +121,8 @@ const Home=()=> {
             }
 
             .backg {
+            left:0;
+            top:0;
             position:absolute;
             display: block;
             width: 100%;
@@ -140,7 +158,7 @@ const Home=()=> {
                 background: #fff;
             }
             .Homebutton{
-            transition: all 0.5s;
+            transition: all 0.35s;
             margin: 5px;
             text-decoration: none;
             display: inline-block;
@@ -152,6 +170,7 @@ const Home=()=> {
             .Homebutton:hover{
                 box-shadow: 0 -3px white,0 3px white; 
             }
+
             `}</style>
             
         </section>

@@ -32,11 +32,11 @@ const Navbar = ({toggle})=>{
 					</Disclosure.Button>
 					<Transition
 						appear={true}
-						enter="transform-gpu transition ease-in duration-1000"
+						enter="transform-gpu transition ease-in-out duration-700"
 						enterFrom="translate-x-96 "
 						enterTo="transform-gpu translate-x-1"
 						entered="transform-gpu translate-x-spe"
-						leave="transform-gpu transition duration-1000 translate-x-10"
+						leave="transform-gpu transition ease-in-out duration-1000 translate-x-10"
 						leaveFrom="transform-gpu translate-x-spe"
 						leaveTo="transform-gpu translate-x-96 "
 					>
