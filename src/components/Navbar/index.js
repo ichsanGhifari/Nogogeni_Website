@@ -12,10 +12,6 @@ import logo from '../../images/LogoNogen.png'
 import { Menu,Transition, Disclosure } from '@headlessui/react'
 // import { motion } from "framer-motion"
 
-// const variants = {
-//   open: { opacity: 1, x: 0 },
-//   closed: { opacity: 0, x: "-100%" },
-// }
 
 const Navbar = ({toggle})=>{
 	// const [isOpen, setIsOpen] = useState(false)
@@ -42,7 +38,7 @@ const Navbar = ({toggle})=>{
 					>
 					<Disclosure.Panel className="absolute h-screen py-20 px-10 sidebar -right-5 z-20 ">
 						<div className='text-2xl mt-5 flex flex-col gap-5'>
-							<NavLinksChild>Home</NavLinksChild>
+							<NavLinksChild to='/'>Home</NavLinksChild>
 							<Disclosure>
 								<Disclosure.Button>
 									<h2 className='italic font-extralight text-left'>About</h2>
@@ -56,7 +52,7 @@ const Navbar = ({toggle})=>{
 								leaveTo="transform scale-100 opacity-0 ">
 									<Disclosure.Panel>
 									<div className='flex flex-col gap-3 ml-5 -mt-3 text-lg'>
-										<NavLinksChild>Team</NavLinksChild>
+										<NavLinksChild to='/Team'>Team</NavLinksChild>
 										<NavLinksChild>Event</NavLinksChild>
 										<NavLinksChild>Staff</NavLinksChild>
 										<NavLinksChild>Testimonial</NavLinksChild>
@@ -77,7 +73,7 @@ const Navbar = ({toggle})=>{
 
 				<NavMenu>
 					<NavItem>
-						<NavLinks to='Home' className='transform translate-y-0'>Home</NavLinks>
+						<NavLinks to='/' className='transform translate-y-0'>Home</NavLinks>
 					</NavItem>
 							<Menu >
 								<div className='grid-cols-1 flex-grow-0 '>
@@ -93,7 +89,7 @@ const Navbar = ({toggle})=>{
 								<Menu.Items className=' flex-col flex italic absolute text-left px-4 mt-1 '>
 									<Menu.Item>
 									{({ active }) => (
-										<NavLinksChild>Team</NavLinksChild>
+										<NavLinksChild to='/Team'>Team</NavLinksChild>
 									)}
 									</Menu.Item>
 									<Menu.Item>

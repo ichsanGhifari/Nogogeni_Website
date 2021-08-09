@@ -168,6 +168,7 @@ const Home=()=> {
             text-align: center;
             }
             .Homebutton:hover{
+                z-index:30;
                 box-shadow: 0 -3px white,0 3px white; 
             }
 
