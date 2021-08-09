@@ -23,7 +23,7 @@ const Navbar = ({toggle})=>{
 		<div className='absolute overflow-visi'>
 		<Nav>
 			<div className='w-screen flex flex-row md:justify-between justify-center px-5 md:py-0 py-5 ' >
-				<NavLogo to='/'><img alt='' src={logo} className='md:pt-0 pt-5'></img></NavLogo>
+				<NavLogo to='/'><img alt='' src={logo} className='md:pt-0 pt-1'></img></NavLogo>
 				<MobileIcon>
 				<Disclosure>
 					<div className='flex flex-row'>
@@ -31,14 +31,14 @@ const Navbar = ({toggle})=>{
 						<Hamburger className='z-30'></Hamburger>
 					</Disclosure.Button>
 					<Transition
-						enter="transition duration-75 opacity-100 "
-						enterFrom="transform scale-100 opacity-100 "
-						enterTo="transform scale-100 opactiy-100 "
-						leave="transition duration-1000 opacity-0 "
-						leaveFrom="transform scale-100 translate-x-96 "
-						leaveTo="transform scale-100 translate-x-96 "
+						enter="transform-gpu duration-1000"
+						enterFrom="transform-gpu translate-x-96 "
+						enterTo="transform-gpu translate-x-0"
+						leave="transform-gpu duration-1000 delay-1000"
+						leaveFrom="transform-gpu translate-x-0 "
+						leaveTo="transform-gpu translate-x-96 "
 					>
-					<Disclosure.Panel className=" h-screen py-20 px-10 sidebar absolute -left-40 z-20 -mt-5 ">
+					<Disclosure.Panel className="h-screen py-20 px-10 sidebar absolute z-20">
 						<div className='text-2xl mt-5 flex flex-col gap-5'>
 							<NavLinksChild>Home</NavLinksChild>
 							<Disclosure>
@@ -133,6 +133,8 @@ const Navbar = ({toggle})=>{
 				background-color:#1E1E1E;
 				width:225px;
 				overflow:hidden;
+				right:-48%;
+				top:-30%;
 			}
 		`}</style>
 		</div>
