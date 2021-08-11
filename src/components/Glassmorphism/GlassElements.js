@@ -2,14 +2,14 @@ import styled from 'styled-components';
 
 export const MainContainer = styled.div`
   display: absolute;
-  top:0;
+  /* top:0;
   left:0;
   right:0;
-  bottom:0;
+  bottom:0; */
   z-index: -1;
   align-items: center;
   flex-direction: column;
-  height: 100%;
+  /* height: 100%; */
   width: 100%;
   background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%);
   box-shadow: 4px 4px 22px 4px rgba(0, 0, 0, 0.42);
