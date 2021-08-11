@@ -38,8 +38,8 @@ const Home=()=> {
                     <div className={`flex flex-col space-y-16 md:-space-y-24`}>
                         <div className={`flex text-title flex-col text-center italic transform-gpu duration-700 transition ${isActive?"translate-x-0 opacity-100":"translate-x-96 opacity-0"} }`}>
                             <h3 style={{letterSpacing: "0.25em"}} 
-                            className='text-xl md:text-5xl sm:text-2xl'>NOGOGENI RACING</h3>
-                            <h1 className='text-6xl md:text-9xl' >MARK I</h1>
+                            className='text-2xl md:text-5xl sm:text-2xl font-black '>NOGOGENI RACING</h3>
+                            <h1 className='text-7xl -mt-4 md:text-9xl font-black' >MARK I</h1>
                         </div>
                         <div className={` md:ml-0 ml-5 transform-gpu duration-700  ${isActive?"translate-x-0 opacity-100":"md:-translate-x-96 -translate-x-32 opacity-0"}  `}>
                             <img className='mx-auto transform md:rotate-0 -rotate-90 md:w-full w-max' alt ='' src={f1}></img>
@@ -60,8 +60,8 @@ const Home=()=> {
                     <div className={`flex flex-col space-y-16 md:-space-y-24 `}>
                         <div className={`flex text-title flex-col  text-center italic transform-gpu duration-700 transition ${isActive?"translate-x-0 opacity-100":"translate-x-96 opacity-0"}`}>
                             <h3 style={{letterSpacing: "0.25em"}} 
-                            className='text-2xl md:text-5xl'>NOGOGENI V</h3>
-                            <h1 className='text-6xl md:text-9xl' >EVO</h1>
+                            className='text-2xl md:text-5xl font-black'>NOGOGENI V</h3>
+                            <h1 className='text-7xl md:text-9xl -mt-4  font-black' >EVO</h1>
                         </div>
                         <div className={`w-full transform duration-700 ${isActive?"translate-x-0 opacity-100":"md:-translate-x-96 -translate-x-32 opacity-0"} `}>
                             <img className='mx-auto transform md:rotate-0 -rotate-90 md:w-full w-max' alt ='' src={el1}></img>
@@ -82,7 +82,7 @@ const Home=()=> {
                         <div className='flex flex-col space-y-24 md:-space-y-2'>
                             <div className={`flex text-title flex-col  text-center italic transform-gpu duration-700 transition ${isActive?"translate-x-0 opacity-100":"translate-x-96 opacity-0"}`}>
                                 <h3 style={{letterSpacing: "0.25em"}} 
-                                className='text-2xl md:text-5xl'>NOGOGENI V</h3>
+                                className='text-3xl md:text-6xl font-black'>NOGOGENI V</h3>
                             </div>
                             <div className={`w-full transform duration-700 ${isActive?"translate-x-0 opacity-100":"md:-translate-x-96 -translate-x-32 opacity-0"}`}>
                                 <img className=' w-max mx-auto transform md:rotate-0 -rotate-90 md:w-full'  alt ='' src={et1}></img>

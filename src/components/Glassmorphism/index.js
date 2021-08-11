@@ -1,10 +1,12 @@
-import {MainContainer} from './GlassElements'
+import {Disable, MainContainer} from './GlassElements'
 
 
 const Glassmorphism = ()=>{
     return(
         <MainContainer>
-            
+            <Disable>
+                
+            </Disable>
         </MainContainer>
     )
 }
