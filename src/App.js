@@ -6,6 +6,7 @@ import Mark1 from './page/Mark1';
 import NogogeniEvo from './page/NogogeniEvo';
 import NogogeniM2 from './page/NogogeniM2';
 import Team from './page/Team';
+import Event from './page/Event';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
                 <Route path='/NogogeniM2' exact component={NogogeniM2}/>
                 <Route path='/NogogeniEvo' exact component={NogogeniEvo}/>
                 <Route path='/Team' exact component={Team} />
+                <Route path='/Event' exact component={Event} />
           </Switch>
       </>
   );

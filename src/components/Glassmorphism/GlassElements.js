@@ -7,10 +7,6 @@ export const MainContainer = styled.div`
   
   /* filter: blur(5px); */
   backdrop-filter:blur(5px);
-  /* filter: blur(3px);
--webkit-filter: blur(3px);
--ms-filter: blur(3px); */
-/* filter: url("data:image/svg+xml;utf9,<svg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'><filter%20id='blur'><feGaussianBlur%20stdDeviation='3'%20/></filter></svg>#blur"); */
 filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3'); 
    
 /* Note: backdrop-filter has minimal browser support */

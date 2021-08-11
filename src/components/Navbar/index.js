@@ -53,7 +53,7 @@ const Navbar = ({toggle})=>{
 									<Disclosure.Panel>
 									<div className='flex flex-col gap-3 ml-5 -mt-3 text-lg'>
 										<NavLinksChild to='/Team'>Team</NavLinksChild>
-										<NavLinksChild>Event</NavLinksChild>
+										<NavLinksChild to='/Event'>Event</NavLinksChild>
 										<NavLinksChild>Staff</NavLinksChild>
 										<NavLinksChild>Testimonial</NavLinksChild>
 									</div>
@@ -94,7 +94,7 @@ const Navbar = ({toggle})=>{
 									</Menu.Item>
 									<Menu.Item>
 									{({ active }) => (
-										<NavLinksChild>Event</NavLinksChild>
+										<NavLinksChild to='/Event'>Event</NavLinksChild>
 									)}
 									</Menu.Item>
 									<Menu.Item>
