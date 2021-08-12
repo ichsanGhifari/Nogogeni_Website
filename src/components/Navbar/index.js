@@ -41,7 +41,7 @@ const Navbar = ({toggle})=>{
 							<NavLinksChild to='/'>Home</NavLinksChild>
 							<Disclosure>
 								<Disclosure.Button>
-									<h2 className='italic font-extralight text-left'>About</h2>
+									<h2 className='italic font-light text-left'>About</h2>
 								</Disclosure.Button>
 								<Transition
 								enter="transition ease-in duration-300 opacity-0  "
