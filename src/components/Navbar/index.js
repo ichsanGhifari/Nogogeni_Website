@@ -60,7 +60,7 @@ const Navbar = ({toggle})=>{
 									</Disclosure.Panel>
 								</Transition>
 							</Disclosure>
-							<NavLinksChild>Achievment</NavLinksChild>
+							<NavLinksChild to='/Achievment'>Achievment</NavLinksChild>
 							<NavLinksChild>Partner</NavLinksChild>
 							<NavLinksChild>Gallery</NavLinksChild>
 							<NavLinksChild>Contact</NavLinksChild>
@@ -112,7 +112,7 @@ const Navbar = ({toggle})=>{
 								</div>
 							</Menu>
 						<NavItem>
-							<NavLinks to='Achievment'>Achievment</NavLinks>
+							<NavLinks to='/Achievment'>Achievment</NavLinks>
 						</NavItem>
 						<NavItem>
 							<NavLinks to='service'>Partner</NavLinks>

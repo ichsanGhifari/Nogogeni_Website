@@ -7,6 +7,7 @@ import NogogeniEvo from './page/NogogeniEvo';
 import NogogeniM2 from './page/NogogeniM2';
 import Team from './page/Team';
 import Event from './page/Event';
+import Achievment from './page/Achievment';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
                 <Route path='/NogogeniEvo' exact component={NogogeniEvo}/>
                 <Route path='/Team' exact component={Team} />
                 <Route path='/Event' exact component={Event} />
+                <Route path='/Achievment' exact component={Achievment} />
           </Switch>
       </>
   );
