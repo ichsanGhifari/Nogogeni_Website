@@ -4,11 +4,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
 import "swiper/components/navigation/navigation.min.css";
 import "swiper/components/pagination/pagination.min.css";
+import "swiper/components/scrollbar/scrollbar.min.css"
 import SwiperCore, {
   Navigation,
   Pagination,
   Mousewheel,
   Keyboard,
+  Scrollbar
 } from "swiper/core";
 
 import bg1 from "../images/Achievments/bgAch1.png";
@@ -34,9 +36,15 @@ import bg2018 from "../images/Achievments/bg2017.png";
 import bg2019 from "../images/Achievments/bg2018.png";
 import bg2020 from "../images/Achievments/bg2019.png";
 
-SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard]);
+SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard,Scrollbar]);
 
 const Achievment = () => {
+  const pagination = {
+    "clickable": true,
+    "renderBullet": function (index, className) {
+            return '<span class="' + className + '">' + (2021 - index) + '</span>';
+          }
+  }
   return (
     <section className="h-screen">
       <Navbar />
@@ -44,7 +52,7 @@ const Achievment = () => {
         cssMode={true}
         navigation={true}
         loop={false}
-        pagination={true}
+        pagination={pagination}
         mousewheel={true}
         keyboard={true}
         className="mySwiper"
@@ -262,7 +270,6 @@ const Achievment = () => {
           .swiper-button-next,
           .swiper-button-prev {
             margin: 0px;
-            visibility: hidden;
           }
         }
         .swiper-slide {
@@ -283,18 +290,22 @@ const Achievment = () => {
           align-items: center;
         }
         .swiper-pagination-bullet {
-            padding:3px 10px;
+            padding:0px 20px;
+            
             width:auto;
-            height:20px;
+            height:30px;
+            text-align: center;
             line-height:20px;
             font-size: 12px;
-            color:#000;
+            border-radius: 0.125rem;
+            color:#fff;
             opacity: 1;
             background: rgba(0,0,0,0.2);
             }
             .swiper-pagination-bullet-active {
-                color:#fff;
+                color:#000;
                 background: #fff;
+                transform: scale(1.5);
             }
       `}</style>
     </section>
