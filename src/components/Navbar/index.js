@@ -86,7 +86,7 @@ const Navbar = ({toggle})=>{
 								leaveFrom="transform scale-100 opacity-100"
 								leaveTo="transform scale-0 opacity-0"
 								>	
-								<Menu.Items className=' flex-col flex italic absolute text-left px-4 mt-1 '>
+								<Menu.Items className=' flex-col gap-2 flex italic absolute text-left px-4 mt-2 '>
 									<Menu.Item>
 									{({ active }) => (
 										<NavLinksChild to='/Team'>Team</NavLinksChild>
