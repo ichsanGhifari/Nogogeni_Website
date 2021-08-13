@@ -4,13 +4,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
 import "swiper/components/navigation/navigation.min.css";
 import "swiper/components/pagination/pagination.min.css";
-import "swiper/components/scrollbar/scrollbar.min.css"
 import SwiperCore, {
   Navigation,
   Pagination,
   Mousewheel,
-  Keyboard,
-  Scrollbar
+  Keyboard
 } from "swiper/core";
 
 import bg1 from "../images/Achievments/bgAch1.png";
@@ -36,14 +34,17 @@ import bg2018 from "../images/Achievments/bg2017.png";
 import bg2019 from "../images/Achievments/bg2018.png";
 import bg2020 from "../images/Achievments/bg2019.png";
 
-SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard,Scrollbar]);
+SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard]);
 
 const Achievment = () => {
   const pagination = {
     "clickable": true,
     "renderBullet": function (index, className) {
-            return '<span class="' + className + '">' + (2021 - index) + '</span>';
-          }
+      return (
+        '<span class="' + className + '">' + (2021 - index) + '</span>'
+        
+        );
+    }
   }
   return (
     <section className="h-screen">
@@ -289,23 +290,28 @@ const Achievment = () => {
           -webkit-align-items: center;
           align-items: center;
         }
+        .swiper-pagination{
+          bottom:3rem !important;
+        }
         .swiper-pagination-bullet {
             padding:0px 20px;
-            
+            margin:0 !important;
             width:auto;
             height:30px;
             text-align: center;
+            font-size:15px !important;
             line-height:20px;
             font-size: 12px;
-            border-radius: 0.125rem;
+            border-radius: 0;
+            border-bottom: 1px solid;
             color:#fff;
             opacity: 1;
-            background: rgba(0,0,0,0.2);
+            background: rgba(0,0,0,0);
             }
             .swiper-pagination-bullet-active {
-                color:#000;
-                background: #fff;
-                transform: scale(1.5);
+                color:#fff;
+                transform: scale(1.5) translate(0,-4px);
+                border-bottom: 3px solid;
             }
       `}</style>
     </section>
