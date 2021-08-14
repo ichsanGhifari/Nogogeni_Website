@@ -1,11 +1,11 @@
 
-const Lines =(color,width)=>{
+const Lines =(color,width ,height)=>{
     return(
         <hr
         style={{
             color: color,
             backgroundColor: color,
-            height: 5,
+            height:height,
             width: width
         }}
     />

@@ -61,7 +61,7 @@ const Navbar = ({toggle})=>{
 								</Transition>
 							</Disclosure>
 							<NavLinksChild to='/Achievment'>Achievment</NavLinksChild>
-							<NavLinksChild>Partner</NavLinksChild>
+							<NavLinksChild to='/Partner'>Partner</NavLinksChild>
 							<NavLinksChild>Gallery</NavLinksChild>
 							<NavLinksChild>Contact</NavLinksChild>
 						</div>
@@ -115,7 +115,7 @@ const Navbar = ({toggle})=>{
 							<NavLinks to='/Achievment'>Achievment</NavLinks>
 						</NavItem>
 						<NavItem>
-							<NavLinks to='service'>Partner</NavLinks>
+							<NavLinks to='/Partner'>Partner</NavLinks>
 						</NavItem>
 						<NavItem>
 							<NavLinks to='service'>Gallery</NavLinks>

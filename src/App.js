@@ -8,6 +8,7 @@ import NogogeniM2 from './page/NogogeniM2';
 import Team from './page/Team';
 import Event from './page/Event';
 import Achievment from './page/Achievment';
+import Partner from './page/Partner';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
                 <Route path='/Team' exact component={Team} />
                 <Route path='/Event' exact component={Event} />
                 <Route path='/Achievment' exact component={Achievment} />
+                <Route path='/Partner' exact component={Partner}/>
           </Switch>
       </>
   );
