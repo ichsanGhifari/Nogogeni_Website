@@ -4,6 +4,7 @@ import istw from '../images/partner/istw.png'
 import petro from '../images/partner/petro.png'
 import pjb from '../images/partner/pjb.png'
 import woody from '../images/partner/woody.png'
+import Lines2 from "../components/Lines/Lines2"
 
 const Partner = () => {
     return(
@@ -13,23 +14,7 @@ const Partner = () => {
                 <div className='mx-auto text-center text-white w-10/12'>
                     <h1 className='italic font-bold'>OUR SPONSORSHIP PARTNERS</h1>
                     <p className='mt-3'>"Thanks to these big companies for making us achieved our best results."</p>
-                    <div className='flex flex-row mt-10 items-center'>
-                        <div className='w-1/5'>
-                            <div className='border-4'></div>
-                        </div>
-                        <div className='w-3/5'>
-                            <div className='border-2'></div>
-                        </div>
-                        <div className='w-3/5'>
-                            <div className='border-4'></div>
-                        </div>
-                        <div className='w-3/5'>
-                            <div className='border-2'></div>
-                        </div>
-                        <div className='w-1/5'>
-                            <div className='border-4'></div>
-                        </div>
-                    </div>
+                    <Lines2 />
                     <div className='flex flex-col mt-10 gap-5 '>
                         <h3 className='font-semibold'>Supported By :</h3>
                         <div className='mx-auto bg-white md:w-1/4 w-3/4 rounded-lg p-5'>

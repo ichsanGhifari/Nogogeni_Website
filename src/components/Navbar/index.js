@@ -62,7 +62,7 @@ const Navbar = ({toggle})=>{
 							</Disclosure>
 							<NavLinksChild to='/Achievment'>Achievement</NavLinksChild>
 							<NavLinksChild to='/Partner'>Partner</NavLinksChild>
-							<NavLinksChild>Gallery</NavLinksChild>
+							<NavLinksChild to='/GAllery'>Gallery</NavLinksChild>
 							<NavLinksChild>Contact</NavLinksChild>
 						</div>
 					</Disclosure.Panel>
@@ -86,7 +86,7 @@ const Navbar = ({toggle})=>{
 								leaveFrom="transform scale-100 opacity-100"
 								leaveTo="transform scale-0 opacity-0"
 								>	
-								<Menu.Items className=' flex-col gap-2 flex italic absolute text-left px-4 mt-2 '>
+								<Menu.Items className=' z-50 flex-col gap-2 flex italic absolute text-left px-4 mt-2 '>
 									<Menu.Item>
 									{({ active }) => (
 										<NavLinksChild to='/Team'>Team</NavLinksChild>
@@ -118,7 +118,7 @@ const Navbar = ({toggle})=>{
 							<NavLinks to='/Partner'>Partner</NavLinks>
 						</NavItem>
 						<NavItem>
-							<NavLinks to='service'>Gallery</NavLinks>
+							<NavLinks to='/Gallery'>Gallery</NavLinks>
 						</NavItem>
 						<NavItem>
 							<NavLinks to='service'>Contact</NavLinks>

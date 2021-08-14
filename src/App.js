@@ -9,6 +9,7 @@ import Team from './page/Team';
 import Event from './page/Event';
 import Achievment from './page/Achievment';
 import Partner from './page/Partner';
+import Gallery from './page/Gallery';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
                 <Route path='/Event' exact component={Event} />
                 <Route path='/Achievment' exact component={Achievment} />
                 <Route path='/Partner' exact component={Partner}/>
+                <Route path='/Gallery' exact component={Gallery}/>
           </Switch>
       </>
   );
