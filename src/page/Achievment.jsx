@@ -40,10 +40,17 @@ const Achievment = () => {
   const pagination = {
     "clickable": true,
     "renderBullet": function (index, className) {
-      return (
-        '<span class="' + className + '">' + (2021 - index) + '</span>'
-        
+      var year =2021;
+      if(index===0){
+        return(
+          '<span class="' + className + '" style="visibility: hidden;"></span>'
         );
+      }else{
+        return (
+          '<span class="' + className + '">' + (year - index) + '</span>'
+          
+          );
+        }
     }
   }
   return (
