@@ -329,7 +329,7 @@ const Event = () => {
         .swiper-slide {
           text-align: center;
           font-size: 18px;
-          background: #fff;
+          background: #000000;
           display: -webkit-box;
           display: -ms-flexbox;
           display: -webkit-flex;

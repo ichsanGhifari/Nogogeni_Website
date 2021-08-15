@@ -105,7 +105,7 @@ const Home=()=> {
             .swiper-slide {
             text-align: center;
             font-size: 18px;
-            background: #fff;
+            background: #000;
             display: -webkit-box;
             display: -ms-flexbox;
             display: -webkit-flex;

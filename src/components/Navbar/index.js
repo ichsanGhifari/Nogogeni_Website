@@ -62,8 +62,8 @@ const Navbar = ({toggle})=>{
 							</Disclosure>
 							<NavLinksChild to='/Achievment'>Achievement</NavLinksChild>
 							<NavLinksChild to='/Partner'>Partner</NavLinksChild>
-							<NavLinksChild to='/GAllery'>Gallery</NavLinksChild>
-							<NavLinksChild>Contact</NavLinksChild>
+							<NavLinksChild to='/Gallery'>Gallery</NavLinksChild>
+							<NavLinksChild to='/Contact'>Contact</NavLinksChild>
 						</div>
 					</Disclosure.Panel>
 					</Transition>
@@ -121,7 +121,7 @@ const Navbar = ({toggle})=>{
 							<NavLinks to='/Gallery'>Gallery</NavLinks>
 						</NavItem>
 						<NavItem>
-							<NavLinks to='service'>Contact</NavLinks>
+							<NavLinks to='/Contact'>Contact</NavLinks>
 						</NavItem>
 				</NavMenu>
 			</div>
