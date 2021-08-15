@@ -23,34 +23,48 @@ const Gallery = () => {
                 <p className='md:w-1/3 w-full mx-auto my-3 md:px-0 px-5'>“Photos are a way to capture expressions and messages that are lost and cannot be copied”</p>
                 <div className='flex flex-col w-10/12 mx-auto mt-5 gap-10 h-full'>
                     <Lines2 />
-                    <Swiper slidesPerView={4} spaceBetween={30} centeredSlides={true} pagination={{
+                    <Swiper slidesPerView={4} spaceBetween={40} centeredSlides={true} pagination={{
                     "clickable": true
                     }} className="mySwiper">
                         <SwiperSlide>
-                        {({ active }) => (
-                            <img alt='' className={`transform-gpu duration-100 ${active?"scale-150":" scale-100"}`} src={fsae2020}></img>
+                        {({ isActive }) => (
+                            <img alt='' className={`transform-gpu duration-200 ${ isActive ?"scale-110":" scale-90"}`} src={fsae2020}></img>
                         )}
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img alt='' src={IIB}></img>
+                        {({ isActive }) => (
+                            <img alt='' className={`transform-gpu duration-200 ${ isActive ?"scale-110":" scale-90"}`} src={IIB}></img>
+                        )}
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img alt='' src={iim}></img>
+                        {({ isActive }) => (
+                            <img alt='' className={`transform-gpu duration-200 ${ isActive ?"scale-110":" scale-90"}`} src={iim}></img>
+                        )}
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img alt='' src={KMHE2018}></img>
+                        {({ isActive }) => (
+                            <img alt='' className={`transform-gpu duration-200 ${ isActive ?"scale-110":" scale-90"}`} src={KMHE2018}></img>
+                        )}
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img alt='' src={kmhe2019}></img>
+                        {({ isActive }) => (
+                            <img alt='' className={`transform-gpu duration-200 ${ isActive ?"scale-110":" scale-90"}`} src={kmhe2019}></img>
+                        )}
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img alt='' src={pev}></img>
+                        {({ isActive }) => (
+                            <img alt='' className={`transform-gpu duration-200 ${ isActive ?"scale-110":" scale-90"}`} src={pev}></img>
+                        )}
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img alt='' src={sem2018}></img>
+                        {({ isActive }) => (
+                            <img alt='' className={`transform-gpu duration-200 ${ isActive ?"scale-110":" scale-90"}`} src={sem2018}></img>
+                        )}
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img alt='' src={sem2019}></img>
+                        {({ isActive }) => (
+                            <img alt='' className={`transform-gpu duration-200 ${ isActive ?"scale-110":" scale-90"}`} src={sem2019}></img>
+                        )}
                         </SwiperSlide>
                     </Swiper>
                     <div className='-mt-5'>
@@ -63,7 +77,8 @@ const Gallery = () => {
             <style jsx>{`
             .swiper-container {
             width: 100%;
-            height: 27rem;
+            height: 30rem;
+            padding:25px
             
             }
             .swiper-pagination{
