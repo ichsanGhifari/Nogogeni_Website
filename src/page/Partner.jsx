@@ -14,7 +14,9 @@ const Partner = () => {
                 <div className='mx-auto text-center text-white w-10/12'>
                     <h1 className='italic font-bold'>OUR SPONSORSHIP PARTNERS</h1>
                     <p className='mt-3'>"Thanks to these big companies for making us achieved our best results."</p>
-                    <Lines2 />
+                    <div className='mt-10'>
+                        <Lines2/>
+                    </div>
                     <div className='flex flex-col mt-10 gap-5 '>
                         <h3 className='font-semibold'>Supported By :</h3>
                         <div className='mx-auto bg-white md:w-1/4 w-3/4 rounded-lg p-5'>
