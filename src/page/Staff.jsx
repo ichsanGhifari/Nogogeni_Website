@@ -10,7 +10,7 @@ const Staff = () => {
           <div className="bottom-0 mt-auto ">
             <img alt="" src={gm} className=""></img>
           </div>
-          <div className="m-auto w-1/3 text-white text-justify">
+          <div className="m-auto w-1/3 text-white text-justify indent">
             <p className="">
               Nogogeni ITS Team is one of the research teams at the Sepuluh
               Nopember Institute of Technology that conducts research in the
@@ -37,7 +37,7 @@ const Staff = () => {
         </div>
       </div>
       <style jsx>{`
-        p {
+        .indent{
           text-indent: 30px;
         }
       `}</style>
