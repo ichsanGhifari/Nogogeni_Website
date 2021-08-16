@@ -11,22 +11,24 @@ import Achievment from './page/Achievment';
 import Partner from './page/Partner';
 import Gallery from './page/Gallery';
 import Contact from './page/Contact';
+import Staff from './page/Staff';
 
 function App() {
   return (
       <>
-          <Switch>
-                <Route path='/' exact component={Home} />   
-                <Route path='/Mark1' exact component={Mark1}/>
-                <Route path='/NogogeniM2' exact component={NogogeniM2}/>
-                <Route path='/NogogeniEvo' exact component={NogogeniEvo}/>
-                <Route path='/Team' exact component={Team} />
-                <Route path='/Event' exact component={Event} />
-                <Route path='/Achievment' exact component={Achievment} />
-                <Route path='/Partner' exact component={Partner}/>
-                <Route path='/Gallery' exact component={Gallery}/>
-                <Route path='/Contact' exact component={Contact} />
-          </Switch>
+        <Switch>
+          <Route path='/' exact component={Home} />   
+          <Route path='/Mark1' exact component={Mark1}/>
+          <Route path='/NogogeniM2' exact component={NogogeniM2}/>
+          <Route path='/NogogeniEvo' exact component={NogogeniEvo}/>
+          <Route path='/Team' exact component={Team} />
+          <Route path='/Event' exact component={Event} />
+          <Route path='/Achievment' exact component={Achievment} />
+          <Route path='/Partner' exact component={Partner}/>
+          <Route path='/Gallery' exact component={Gallery}/>
+          <Route path='/Contact' exact component={Contact} />
+          <Route path='/Staff' excat component={Staff} />
+        </Switch>
       </>
   );
 }
