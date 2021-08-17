@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom';
 import f1 from '../images/home/f1.png'
 import bg1 from '../images/bgitem.png'
@@ -19,15 +19,11 @@ import SwiperCore, {
 
 SwiperCore.use([Navigation,Pagination,Mousewheel,Keyboard]);
 const Home=()=> { 
-    const[isOpen,setIsOpen] = useState(false);
-    const toggle = () =>{
-        setIsOpen(!isOpen);
-    };
     // const[slider1,setSlider1] = useState(false);
-
+    
     return (
         <section className='h-screen'>
-        <Navbar toggle={toggle} />
+        <Navbar />
         <Swiper cssMode={true} navigation={true} loop={true} pagination={true} mousewheel={true} keyboard={true} className="mySwiper">
         
             <SwiperSlide>

@@ -8,7 +8,7 @@ import SwiperCore, {
   Navigation,
   Pagination,
   Mousewheel,
-  Keyboard
+  Keyboard,
 } from "swiper/core";
 
 import bg1 from "../images/Achievments/bgAch1.png";
@@ -38,21 +38,20 @@ SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard]);
 
 const Achievment = () => {
   const pagination = {
-    "clickable": true,
-    "renderBullet": function (index, className) {
-      var year =2021;
-      if(index===0){
-        return(
-          '<span class="' + className + '" style="visibility: hidden;"></span>'
-        );
-      }else{
+    clickable: true,
+    renderBullet: function (index, className) {
+      var year = 2021;
+      if (index === 0) {
         return (
-          '<span class="' + className + '">' + (year - index) + '</span>'
-          
-          );
-        }
-    }
-  }
+          '<span class="' +
+          className +
+          '" style="visibility: hidden; padding:0 0 !important;"></span>'
+        );
+      } else {
+        return '<span class="' + className + '">' + (year - index) + "</span>";
+      }
+    },
+  };
   return (
     <section className="h-screen">
       <Navbar />
@@ -121,7 +120,7 @@ const Achievment = () => {
         <SwiperSlide>
           <div className="h-screen">
             <img src={bg2018} alt="" className="bgSlide"></img>
-            <div className="flex md:flex-row flex-col h-screen m-auto w-10/12 justify-center md:gap-10 gap-5">
+            <div className="flex md:flex-row flex-col h-screen m-auto w-10/12 justify-center md:gap-10 gap-0 md:mt-0 -mt-5">
               <div className=" md:my-auto z-0">
                 <img alt="" src={ach2018} className="w-max static "></img>
               </div>
@@ -297,9 +296,16 @@ const Achievment = () => {
           -webkit-align-items: center;
           align-items: center;
         }
+        }
+
+        .swiper-container-horizontal{
+          bottom:3rem !important;
+        }
         .swiper-pagination{
           bottom:3rem !important;
         }
+
+        
         .swiper-pagination-bullet {
             padding:0px 20px;
             margin:0 !important;
@@ -319,6 +325,17 @@ const Achievment = () => {
                 color:#fff;
                 transform: scale(1.5) translate(0,-4px);
                 border-bottom: 3px solid;
+            }
+
+            @media screen and (max-width:768px){
+                .swiper-pagination-bullet{
+                  padding:7px 10px;
+                }
+                .swiper-pagination{
+                  padding:0 20px;
+                  bottom:2rem;
+                  
+                }
             }
       `}</style>
     </section>
