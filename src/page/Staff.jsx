@@ -3,14 +3,14 @@ import gm from "../images/Staff/GM.png";
 
 const Staff = () => {
   return (
-    <section className="bg-bgStaff bg-cover">
+    <section className=" h-full">
       <Navbar />
-      <div className="h-screen">
-        <div className=" h-screen absolute flex flex-row gap-24 z-0">
-          <div className="bottom-0 mt-auto ">
+      <div className="h-screen bg-bgStaff bg-cover">
+        <div className="h-full mt-10 absolute flex md:flex-row flex-col md:gap-24 gap-0 sm:gap-5 z-0">
+          <div className="bottom-0 mt-auto md:w-max w-1/2 ">
             <img alt="" src={gm} className=""></img>
           </div>
-          <div className="m-auto w-1/3 text-white text-justify indent">
+          <div className="m-auto md:w-1/3 w-11/12 text-white text-justify indent card md:p-5 p-7">
             <p className="">
               Nogogeni ITS Team is one of the research teams at the Sepuluh
               Nopember Institute of Technology that conducts research in the
@@ -31,14 +31,46 @@ const Staff = () => {
             </p>
           </div>
         </div>
-        <div className="absolute py-5 z-10 flex flex-col text-white bottom-0 w-1/4 left-1/4">
+        <div className="absolute py-5 z-10 flex flex-col text-white title md:w-1/4 w-2/3 md:left-1/4 left-1/4">
           <p className="text-xl">Dimas Andi Setiawan</p>
-          <h1 className="italic font-extrabold text-7xl">GENERAL MANAGER</h1>
+          <h1 className="italic font-extrabold md:text-7xl text-5xl">GENERAL MANAGER</h1>
         </div>
       </div>
+        <div className='bg-black h-full z-0 -mt-1 '>
+          <div className='staff text-center text-white'>
+            <h1>DUARR</h1>
+          </div>
+        </div>
       <style jsx>{`
-        .indent{
+        .indent {
           text-indent: 30px;
+        }
+        .card {
+          background: linear-gradient(to right, white 4px, transparent 4px) 0 0,
+            linear-gradient(to left, white 4px, transparent 4px) 100% 100%,
+            linear-gradient(to bottom, white 4px, transparent 4px) 0 0,
+            linear-gradient(to top, white 4px, transparent 4px) 100% 100%;
+            background-repeat: no-repeat;
+            background-size: 40px 40px;
+        }
+        .title{
+          bottom:0
+        }
+        .staff{
+          padding:5rem;
+        }
+        @media screen and (max-width:768px){
+          .title{
+            bottom:50%;
+          }
+          .staff{
+             padding:2rem;
+            }
+          @media screen and (max-width:400px){
+            .staff{
+             padding:10rem 2rem;
+            }
+          }
         }
       `}</style>
     </section>
