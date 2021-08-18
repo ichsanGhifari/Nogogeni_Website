@@ -1,5 +1,7 @@
 import Navbar from "../components/Navbar";
-import gm from "../images/Staff/GM.png";
+import gm from "../images/Staff/GM.png"; 
+
+import intan from '../images/about/staff/finance/IntanFilaMillinia.png'
 
 const Staff = () => {
   return (
@@ -38,7 +40,13 @@ const Staff = () => {
       </div>
         <div className='bg-black h-full z-0 -mt-1 '>
           <div className='staff text-center text-white'>
-            <h1>DUARR</h1>
+            <div className='w-1/2 mx-auto flex flex-col gap-20'>
+              <h2>FINANCE DIVISION</h2>
+              <div className='mx-auto flex flex-col gap-10'>
+                <img src={intan} alt=''></img>
+                <p></p>
+              </div>
+            </div>
           </div>
         </div>
       <style jsx>{`
