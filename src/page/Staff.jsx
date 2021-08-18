@@ -3,7 +3,7 @@ import gm from "../images/Staff/GM.png";
 
 const Staff = () => {
   return (
-    <section className=" h-full">
+    <section className="h-full w-screen">
       <Navbar />
       <div className="h-screen bg-bgStaff bg-cover">
         <div className="h-full mt-10 absolute flex md:flex-row flex-col md:gap-24 gap-0 sm:gap-5 z-0">
