@@ -1,9 +1,13 @@
+import React, { useState } from "react";
 import Navbar from "../components/Navbar";
-import gm from "../images/Staff/GM.png"; 
+import gm from "../images/Staff/GM.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-import intan from '../images/about/staff/finance/IntanFilaMillinia.png'
+import intan from "../images/about/staff/finance/IntanFilaMillinia.png";
 
 const Staff = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <section className="h-full w-screen">
       <Navbar />
@@ -35,20 +39,40 @@ const Staff = () => {
         </div>
         <div className="absolute py-5 z-10 flex flex-col text-white title md:w-1/4 w-2/3 md:left-1/4 left-1/4">
           <p className="text-xl">Dimas Andi Setiawan</p>
-          <h1 className="italic font-extrabold md:text-7xl text-5xl">GENERAL MANAGER</h1>
+          <h1 className="italic font-extrabold md:text-7xl text-5xl">
+            GENERAL MANAGER
+          </h1>
         </div>
       </div>
-        <div className='bg-black h-full z-0 -mt-1 '>
-          <div className='staff text-center text-white'>
-            <div className='w-1/2 mx-auto flex flex-col gap-20'>
-              <h2>FINANCE DIVISION</h2>
-              <div className='mx-auto flex flex-col gap-10'>
-                <img src={intan} alt=''></img>
-                <p></p>
+      <div className="bg-black h-full z-0 -mt-1 ">
+        <div className="staff text-center text-white">
+          <div className="w-1/2 mx-auto flex flex-col gap-20">
+            <h2>FINANCE DIVISION</h2>
+            <div className="w-5/12 mx-auto flex flex-col gap-5">
+              <img src={intan} alt="" onClick={()=>setIsOpen(false)} className={`${isOpen?"cursor-pointer":"cursor-default"}`}></img>
+              <div
+                className={`border-white w-max mx-auto ${
+                  isOpen
+                    ? " border-b-2 rounded-none sideBorder cursor-default"
+                    : "border-2 rounded-md cursor-pointer"
+                }`}
+                onClick={() => setIsOpen(true)}
+              >
+                <p className={`px-7 py-1  ${isOpen ? "hidden w-0" : "visible"}`}>
+                  See More
+                </p>
+                <div className={`px-5 py-2 ${isOpen ? "visible" : "hidden w-0"}`} >
+                  <p>Intan Fila Millinia</p>
+                  <p>
+                    <FontAwesomeIcon icon={faEnvelope} className="mr-3" />
+                    intanfilam@gmail.com
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
       <style jsx>{`
         .indent {
           text-indent: 30px;
@@ -58,25 +82,34 @@ const Staff = () => {
             linear-gradient(to left, white 4px, transparent 4px) 100% 100%,
             linear-gradient(to bottom, white 4px, transparent 4px) 0 0,
             linear-gradient(to top, white 4px, transparent 4px) 100% 100%;
-            background-repeat: no-repeat;
-            background-size: 40px 40px;
+          background-repeat: no-repeat;
+          background-size: 40px 40px;
         }
-        .title{
-          bottom:0
+        .sideBorder {
+          background: 
+            linear-gradient(to right, white 2px, transparent 2px) 0 100%,
+            linear-gradient(to left, white 2px, transparent 2px) 100% 100%,
+            linear-gradient(to top, black 0px, transparent 0px) 0% 0%;
+
+          background-repeat: no-repeat;
+          background-size: 30px 30px;
         }
-        .staff{
-          padding:5rem;
+        .title {
+          bottom: 0;
         }
-        @media screen and (max-width:768px){
-          .title{
-            bottom:50%;
+        .staff {
+          padding: 5rem;
+        }
+        @media screen and (max-width: 768px) {
+          .title {
+            bottom: 50%;
           }
-          .staff{
-             padding:2rem;
-            }
-          @media screen and (max-width:400px){
-            .staff{
-             padding:10rem 2rem;
+          .staff {
+            padding: 2rem;
+          }
+          @media screen and (max-width: 400px) {
+            .staff {
+              padding: 10rem 2rem;
             }
           }
         }
