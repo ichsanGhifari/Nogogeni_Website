@@ -12,8 +12,8 @@ const Contact = () => {
       <div className='w-screen absolute top-1/4'>
         <div className=" flex flex-col mx-auto w-3/4">
             <div className="flex flex-row w-full -space-x-24 ">
-                <div className='w-1/6 z-0'>
-                    <img src={gm} alt="" className=" z-10 rounded-full"></img>
+                <div className='w-1/6 z-10 border-2 rounded-full border-white bg-black'>
+                    <img src={gm} alt="" className=" z-10 transform-gpu duration-500 ease-in-out hover:scale-105 hover:-translate-y-2"></img>
                 </div>
                 <div className="py-5 px-28 border-2 bg-white ml-36 ">
                     <p className='font-bold'>General Manager</p>
