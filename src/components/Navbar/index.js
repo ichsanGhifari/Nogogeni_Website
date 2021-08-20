@@ -16,7 +16,7 @@ import { Menu,Transition, Disclosure } from '@headlessui/react'
 const Navbar = ({toggle})=>{
 	// const [isOpen, setIsOpen] = useState(false)
     return (
-		<div className='absolute overflow-visi'>
+		<div className='absolute overflow-visi z-50'>
 		<Nav>
 			<div className='w-screen flex flex-row md:justify-between justify-center px-5 md:py-0 py-5 ' >
 				<NavLogo to='/'><img alt='' src={logo} className='md:pt-0 pt-1'></img></NavLogo>
@@ -36,7 +36,7 @@ const Navbar = ({toggle})=>{
 						leaveFrom="transform-gpu translate-x-spe"
 						leaveTo="transform-gpu translate-x-96 "
 					>
-					<Disclosure.Panel className="absolute h-screen py-20 px-10 sidebar -right-5 z-20 ">
+					<Disclosure.Panel className="absolute h-screen py-20 px-10 sidebar -right-5 z-50 ">
 						<div className='text-2xl mt-5 flex flex-col gap-5'>
 							<NavLinksChild to='/'>Home</NavLinksChild>
 							<Disclosure>
