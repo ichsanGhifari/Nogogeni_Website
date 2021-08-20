@@ -51,14 +51,14 @@ const Staff = () => {
             <div className="w-5/12 mx-auto flex flex-col gap-5">
               <img src={intan} alt="" onClick={()=>setIsOpen(false)} className={`${isOpen?"cursor-pointer":"cursor-default"}`}></img>
               <div
-                className={`border-white w-max mx-auto ${
+                className={`border-white w-max mx-auto transition-all ${
                   isOpen
-                    ? " border-b-2 rounded-none sideBorder cursor-default"
+                    ? " border-b-2 rounded-none sideBorder cursor-default "
                     : "border-2 rounded-md cursor-pointer"
                 }`}
                 onClick={() => setIsOpen(true)}
               >
-                <p className={`px-7 py-1  ${isOpen ? "hidden w-0" : "visible"}`}>
+                <p className={`px-7 py-1   ${isOpen ? "hidden w-0" : "visible"}`}>
                   See More
                 </p>
                 <div className={`px-5 py-2 ${isOpen ? "visible" : "hidden w-0"}`} >
