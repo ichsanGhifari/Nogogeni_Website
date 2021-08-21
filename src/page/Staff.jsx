@@ -4,6 +4,7 @@ import gm from "../images/Staff/GM.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
+
 import intan from "../images/about/staff/finance/IntanFilaMillinia.png";
 
 const Staff = () => {
@@ -51,17 +52,18 @@ const Staff = () => {
             <div className="w-5/12 mx-auto flex flex-col gap-5">
               <img src={intan} alt="" onClick={()=>setIsOpen(false)} className={`${isOpen?"cursor-pointer":"cursor-default"}`}></img>
               <div
-                className={`border-white w-max mx-auto transition-all ${
+                className={`border-white w-max mx-auto ${
                   isOpen
-                    ? " border-b-2 rounded-none sideBorder cursor-default "
-                    : "border-2 rounded-md cursor-pointer"
+                    ? " cursor-default sideBorder  border-b-2 rounded-none"
+                    : "  cursor-pointer border-2 rounded-md h-10 "
                 }`}
                 onClick={() => setIsOpen(true)}
               >
-                <p className={`px-7 py-1   ${isOpen ? "hidden w-0" : "visible"}`}>
+                <p className={`px-7 py-1 transform-gpu duration-500 m-auto w-3/4 ${isOpen ? "scale-0 " : "scale-100"}`}
+                >
                   See More
                 </p>
-                <div className={`px-5 py-2 ${isOpen ? "visible" : "hidden w-0"}`} >
+                <div className={`px-5 py-2  transform-gpu duration-500 ${isOpen ? "scale-100 " : "scale-0"}`} >
                   <p>Intan Fila Millinia</p>
                   <p>
                     <FontAwesomeIcon icon={faEnvelope} className="mr-3" />
