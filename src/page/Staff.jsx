@@ -51,16 +51,16 @@ const Staff = () => {
             <h2>FINANCE DIVISION</h2>
             <div className="w-5/12 mx-auto flex flex-col gap-5 ">
               <img src={intan} alt="" onClick={()=>setIsOpen(false)} className={`${isOpen?"cursor-pointer":"cursor-default"}`}></img>
-              <div className={`transform-gpu py-1 ${isOpen ? "duration-500 sideBorder w-full " :"w-3/4"}`}>
+              <div className={`transform-gpu py-1 ${isOpen ? "duration-300 sideBorder w-full " :"w-3/4"}`}>
                 <div
                   className={`w-max mx-auto transform-gpu  ${
                     isOpen
-                      ? " ease-out cursor-default rounded-none border-2 border-black  "
-                      : "duration-1000 border-white cursor-pointer border-2 rounded-md h-10 "
+                      ? "cursor-default rounded-none border-2 border-black  "
+                      : "duration-500 border-white cursor-pointer border-2 rounded-md h-10 "
                   }`}
                   onClick={() => setIsOpen(true)}
                 >
-                  <p className={`px-7 py-1 transform-gpu duration-500 m-auto w-3/4 ${isOpen ? "scale-0 h-0" : "scale-100"}`}
+                  <p className={`px-5 py-1 transform-gpu duration-100 m-auto w-3/4 ${isOpen ? "scale-0 h-0" : "scale-100"}`}
                   >
                     See More
                   </p>
