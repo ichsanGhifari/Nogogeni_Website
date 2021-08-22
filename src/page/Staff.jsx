@@ -49,26 +49,28 @@ const Staff = () => {
         <div className="staff text-center text-white">
           <div className="w-1/2 mx-auto flex flex-col gap-20">
             <h2>FINANCE DIVISION</h2>
-            <div className="w-5/12 mx-auto flex flex-col gap-5">
+            <div className="w-5/12 mx-auto flex flex-col gap-5 ">
               <img src={intan} alt="" onClick={()=>setIsOpen(false)} className={`${isOpen?"cursor-pointer":"cursor-default"}`}></img>
-              <div
-                className={`border-white w-max mx-auto ${
-                  isOpen
-                    ? " cursor-default sideBorder  border-b-2 rounded-none"
-                    : "  cursor-pointer border-2 rounded-md h-10 "
-                }`}
-                onClick={() => setIsOpen(true)}
-              >
-                <p className={`px-7 py-1 transform-gpu duration-500 m-auto w-3/4 ${isOpen ? "scale-0 " : "scale-100"}`}
+              <div className={`transform-gpu py-1 ${isOpen ? "duration-500 sideBorder w-full " :"w-3/4"}`}>
+                <div
+                  className={`w-max mx-auto transform-gpu  ${
+                    isOpen
+                      ? " ease-out cursor-default rounded-none border-2 border-black  "
+                      : "duration-1000 border-white cursor-pointer border-2 rounded-md h-10 "
+                  }`}
+                  onClick={() => setIsOpen(true)}
                 >
-                  See More
-                </p>
-                <div className={`px-5 py-2  transform-gpu duration-500 ${isOpen ? "scale-100 " : "scale-0"}`} >
-                  <p>Intan Fila Millinia</p>
-                  <p>
-                    <FontAwesomeIcon icon={faEnvelope} className="mr-3" />
-                    intanfilam@gmail.com
+                  <p className={`px-7 py-1 transform-gpu duration-500 m-auto w-3/4 ${isOpen ? "scale-0 h-0" : "scale-100"}`}
+                  >
+                    See More
                   </p>
+                  <div className={`px-5 py-2 -mt-5 transform-gpu duration-500  ${isOpen ? "scale-100 " : "scale-0 h-0 "}`} >
+                    <p>Intan Fila Millinia</p>
+                    <p>
+                      <FontAwesomeIcon icon={faEnvelope} className="mr-3" />
+                      intanfilam@gmail.com
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -91,10 +93,10 @@ const Staff = () => {
           background: 
             linear-gradient(to right, white 2px, transparent 2px) 0 100%,
             linear-gradient(to left, white 2px, transparent 2px) 100% 100%,
-            linear-gradient(to top, black 0px, transparent 0px) 0% 0%;
-
+            linear-gradient(to top, white 2px, transparent 2px) 0% 100%;
+ 
           background-repeat: no-repeat;
-          background-size: 30px 30px;
+          background-size: 270px 35px;
         }
         .title {
           bottom: 0;
