@@ -11,7 +11,7 @@ import nur from "../images/about/staff/finance/NurAfniWirdaNabila.png";
 const Staff = () => {
   
   return (
-    <section className="h-full w-screen">
+    <section className="w-screen">
       <Navbar />
       <div className="h-screen bg-bgStaff bg-cover">
         <div className="h-full mt-10 absolute flex md:flex-row flex-col md:gap-24 gap-0 sm:gap-5 z-0">
@@ -46,8 +46,8 @@ const Staff = () => {
           </h1>
         </div>
       </div>
-      <div className="bg-black h-full z-0 -mt-1 ">
-        <div className="staff text-center text-white">
+      <div className="bg-black -mt-1 2xl:mt-0 ">
+        <div className="staff text-center text-white w-full 2xl:w-9/12 mx-auto">
           <div className="w-1/2 mx-auto flex flex-col gap-20">
             <h2>FINANCE DIVISION</h2>
             <div className='w-5/12 mx-auto flex flex-col'>
@@ -66,6 +66,10 @@ const Staff = () => {
         </div>
       </div>
       <style jsx>{`
+        html, body{
+          width:100%;
+          overflow-x:hidden;
+        }
         .indent {
           text-indent: 30px;
         }
