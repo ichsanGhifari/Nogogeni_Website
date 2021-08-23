@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import gm from "../images/Staff/GM.png";
 import Frame from "../components/StaffFrame"
-import Line from "../components/Lines/index"
+import Lines from "../components/Lines/index"
 
 import intan from "../images/about/staff/finance/IntanFilaMillinia.png";
 import nur from "../images/about/staff/finance/NurAfniWirdaNabila.png";
@@ -55,12 +55,14 @@ const Staff = () => {
               <Frame name='Nur Afni Wirda Nabila' img={nur} email='afniwnabila@gmail.com' />
             </div>
           </div>
-          <div className='flex flex-col'>
-            <div classNam=''>
-              <h1 className='italic text-7xl font-extrabold'>NON-TECHNICAL DIVISION</h1>
-              <Line />
+          <div className=' flex flex-col gap-5 '>
+            <h1 className='italic text-7xl font-extrabold'>NON-TECHNICAL DIVISION</h1>
+            <h3 className=' '>NON-TECHNICAL MANAGER</h3>
+            <div className='mx-auto w-5/12 '> 
+            <Lines color="white"/>
             </div>
           </div>
+
         </div>
       </div>
       <style jsx>{`

@@ -1,14 +1,10 @@
-
-const Lines =(color,width ,height)=>{
-    return(
-        <hr
+const Line = ({ color }) => (
+    <hr
         style={{
             color: color,
             backgroundColor: color,
-            height:height,
-            width: width
+            height: 5
         }}
     />
-    )
-}
-export default Lines
+);
+export default Line
