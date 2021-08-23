@@ -1,14 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import Navbar from "../components/Navbar";
 import gm from "../images/Staff/GM.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-
+import Frame from "../components/StaffFrame"
+import Line from "../components/Lines/index"
 
 import intan from "../images/about/staff/finance/IntanFilaMillinia.png";
+import nur from "../images/about/staff/finance/NurAfniWirdaNabila.png";
+
 
 const Staff = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  
   return (
     <section className="h-full w-screen">
       <Navbar />
@@ -49,30 +50,15 @@ const Staff = () => {
         <div className="staff text-center text-white">
           <div className="w-1/2 mx-auto flex flex-col gap-20">
             <h2>FINANCE DIVISION</h2>
-            <div className="w-5/12 mx-auto flex flex-col gap-5 ">
-              <img src={intan} alt="" onClick={()=>setIsOpen(false)} className={`${isOpen?"cursor-pointer":"cursor-default"}`}></img>
-              <div className={`transform-gpu py-1 ${isOpen ? "duration-300 sideBorder w-full " :"w-3/4"}`}>
-                <div
-                  className={`w-max mx-auto transform-gpu  ${
-                    isOpen
-                      ? "cursor-default rounded-none border-2 border-black  "
-                      : "duration-500 border-white cursor-pointer border-2 rounded-md h-10 "
-                  }`}
-                  onClick={() => setIsOpen(true)}
-                >
-                  <p className={`px-5 py-1 transform-gpu duration-100 m-auto w-3/4 ${isOpen ? "scale-0 h-0" : "scale-100"}`}
-                  >
-                    See More
-                  </p>
-                  <div className={`px-5 py-2 -mt-5 transform-gpu duration-500  ${isOpen ? "scale-100 " : "scale-0 h-0 "}`} >
-                    <p>Intan Fila Millinia</p>
-                    <p>
-                      <FontAwesomeIcon icon={faEnvelope} className="mr-3" />
-                      intanfilam@gmail.com
-                    </p>
-                  </div>
-                </div>
-              </div>
+            <div className='w-5/12 mx-auto flex flex-col'>
+              <Frame name='Intan Fila Millinia' img={intan} email='intanfilam@gmail.com' />
+              <Frame name='Nur Afni Wirda Nabila' img={nur} email='afniwnabila@gmail.com' />
+            </div>
+          </div>
+          <div className='flex flex-col'>
+            <div classNam=''>
+              <h1 className='italic text-7xl font-extrabold'>NON-TECHNICAL DIVISION</h1>
+              <Line />
             </div>
           </div>
         </div>
@@ -89,15 +75,7 @@ const Staff = () => {
           background-repeat: no-repeat;
           background-size: 40px 40px;
         }
-        .sideBorder {
-          background: 
-            linear-gradient(to right, white 2px, transparent 2px) 0 100%,
-            linear-gradient(to left, white 2px, transparent 2px) 100% 100%,
-            linear-gradient(to top, white 2px, transparent 2px) 0% 100%;
- 
-          background-repeat: no-repeat;
-          background-size: 270px 35px;
-        }
+        
         .title {
           bottom: 0;
         }
