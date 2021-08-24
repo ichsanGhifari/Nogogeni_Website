@@ -12,6 +12,7 @@ import Partner from './page/Partner';
 import Gallery from './page/Gallery';
 import Contact from './page/Contact';
 import Staff from './page/Staff';
+import Testimonial from './page/Testimonial';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path='/Gallery' exact component={Gallery}/>
           <Route path='/Contact' exact component={Contact} />
           <Route path='/Staff' excat component={Staff} />
+          <Route path='/Testimonial' exact component={Testimonial} />
         </Switch>
       </>
   );

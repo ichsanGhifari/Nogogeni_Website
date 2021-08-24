@@ -14,7 +14,7 @@ import { Menu,Transition, Disclosure } from '@headlessui/react'
 
 
 const Navbar = ({toggle})=>{
-	// const [isOpen, setIsOpen] = useState(false)
+
     return (
 		<div className='absolute overflow-visi z-50'>
 		<Nav>
@@ -55,7 +55,7 @@ const Navbar = ({toggle})=>{
 										<NavLinksChild to='/Team'>Team</NavLinksChild>
 										<NavLinksChild to='/Event'>Event</NavLinksChild>
 										<NavLinksChild to='/Staff'>Staff</NavLinksChild>
-										<NavLinksChild>Testimonial</NavLinksChild>
+										<NavLinksChild to='/Testimonial'>Testimonial</NavLinksChild>
 									</div>
 									</Disclosure.Panel>
 								</Transition>
@@ -104,7 +104,7 @@ const Navbar = ({toggle})=>{
 									</Menu.Item>
 									<Menu.Item>
 									{({ active }) => (
-										<NavLinksChild>Testimonial</NavLinksChild>
+										<NavLinksChild to='/Testimonial'>Testimonial</NavLinksChild>
 									)}
 									</Menu.Item>
 								</Menu.Items>					
