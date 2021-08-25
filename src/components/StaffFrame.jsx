@@ -7,13 +7,13 @@ function Frame(props){
 
     return(
     <section className=" flex flex-col gap-5 h-96 ">
-        <img src={props.img} alt="" onClick={()=>setIsOpen(false)} className={` max-w-xl flex-shrink-0 ${isOpen?"cursor-pointer":"cursor-default"}`}></img>
-        <div className={`transform-gpu  duration-300 ${isOpen ? "sideBorder scale-100" :"  scale-90"}`}>
+        <img src={props.img} alt="" onClick={()=>setIsOpen(false)} className={` max-w-xl flex-shrink-0 flex-grow-0 w-60 mx-auto ${isOpen?"cursor-pointer":"cursor-default"}`}></img>
+        <div className={`transform-gpu  duration-300 ${isOpen ? "sideBorder scale-100" :"scale-90"}`}>
             <div
             className={`transition-opacity duration-500  ${
                 isOpen
                 ? "cursor-default border-opacity-0"
-                : " cursor-pointer  border-opacity-100 w-3/4 mx-auto  border-2 border-white rounded-md"
+                : " cursor-pointer border-opacity-100 w-32 mx-auto  border-2 border-white rounded-md"
             }`}
             onClick={() => setIsOpen(true)}
             >
@@ -32,11 +32,12 @@ function Frame(props){
         </div>
         <style jsx>{`
         .sideBorder {
+            transition: 0.5s ease-in all;
           background: 
             linear-gradient(to right, white 2px, transparent 2px) 0 100%,
             linear-gradient(to left, white 2px, transparent 2px) 100% 100%,
             linear-gradient(to top, white 2px, transparent 2px) 0% 100%;
- 
+            opacity:100;
           background-repeat: no-repeat;
           background-size: 370px 35px;
         }

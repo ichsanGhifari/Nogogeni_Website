@@ -7,7 +7,34 @@ import Lines from "../components/Lines/index";
 import intan from "../images/about/staff/finance/IntanFilaMillinia.png";
 import nur from "../images/about/staff/finance/NurAfniWirdaNabila.png";
 import misbah from "../images/about/staff/nontechManager/MisbahChoirulHumam.png";
-import rr from "../images/about/staff/administration/RrYuanitaDewiSaresty.png"
+
+import rr from "../images/about/staff/administration/RrYuanitaDewiSaresty.png";
+import alifah from "../images/about/staff/administration/AlifahSyah.png";
+import clariesta from "../images/about/staff/administration/ClariestaPutriArdiyanti.png";
+import khusnul from "../images/about/staff/administration/KhusnulAiniaAprilinda.png";
+import rahma from "../images/about/staff/administration/RahmadinaGriyantiLestari.png";
+
+import fajar from "../images/about/staff/creativeBranding/FajarPutraCahyadi.png";
+import ramadhani from "../images/about/staff/creativeBranding/RamadhaniYusdhaliyantiAnwar.png";
+import bismi from "../images/about/staff/creativeBranding/RidwanBismiAhmadi.png";
+
+import fauzan from "../images/about/staff/sponsorship/MohammadFauzanR.png";
+import fairuz from "../images/about/staff/sponsorship/DaffaFairuzI’zaz.png";
+import kum from "../images/about/staff/sponsorship/KumaraGilangBahtiaristanto.png";
+import sabina from "../images/about/staff/sponsorship/SabinaRizkysaura.png";
+
+import rizky from "../images/about/staff/technicalManager/AdeRizkyMaulana.png";
+import marlin from "../images/about/staff/bodyframe/MarlinDwiJayaK.png";
+import andi from "../images/about/staff/bodyframe/AndiMulyanto.png";
+import bagus from "../images/about/staff/bodyframe/BagusKharismaYulianto.png";
+import said from "../images/about/staff/bodyframe/SaidAthThaariqA.png";
+import faizul from "../images/about/staff/bodyframe/FaizulFirdaus.png";
+
+import ahmad from "../images/about/staff/electricalPropulsionSystem/AchmadYugoM.png"
+import ghidfari from "../images/about/staff/electricalPropulsionSystem/MuhammadIchsanGhifari.png"
+import rizal from "../images/about/staff/electricalPropulsionSystem/RizalAsharM.png"
+import sulthan from "../images/about/staff/electricalPropulsionSystem/SulthanAriqPrananda.png"
+
 
 const Staff = () => {
   return (
@@ -50,7 +77,7 @@ const Staff = () => {
         <div className="staff text-center text-white w-full 2xl:w-9/12 mx-auto">
           <div className="w-1/2 mx-auto flex flex-col gap-20">
             <h2>FINANCE DIVISION</h2>
-            <div className="w-5/12 mx-auto flex flex-col">
+            <div className="w-6/12 mx-auto flex flex-col">
               <Frame
                 name="Intan Fila Millinia"
                 img={intan}
@@ -77,8 +104,8 @@ const Staff = () => {
                   email="misbah.humam@gmail.com"
                 />
               </div>
-              <div className="mt-10 mx-auto">
-                <p className='text-justify'>
+              <div className=" mx-auto">
+                <p className="text-justify -mt-10">
                   He is responsible for all non-technical matters on our team.
                   He has a big role in creating a comfortable working
                   atmosphere, directing and supervising staff to work together
@@ -86,14 +113,166 @@ const Staff = () => {
                 </p>
               </div>
             </div>
-            <div className='w-1/2 mx-auto mt-10 flex flex-row'>
-              <div className='w-6/12 mx-auto'>
-                <Frame name='Rr.Yuanita Dewi Saresty' img={rr} email='yuanitasaresty9@gmail.com' />
+            <h2 className="mt-10">ADIMINSTRATION DIVISION</h2>
+            <div className=" flex flex-col gap-2 ">
+              <div className=" mx-auto ">
+                <Frame
+                  name="Rr.Yuanita Dewi Saresty"
+                  img={rr}
+                  email="yuanitasaresty9@gmail.com"
+                />
               </div>
-              <div className='flex flex-col'>
-                
+              <div className="flex md:flex-row flex-col mx-auto gap-5">
+                <Frame
+                  name="Rahmadina Griyanti Lestari"
+                  img={rahma}
+                  email="rahmadinagl@gmail.com"
+                />
+                <Frame
+                  name="Alifah Syah"
+                  img={alifah}
+                  email="alifahsyah11@gmail.com"
+                />
+                <Frame
+                  name="Clariesta Putri Ardiyanti"
+                  img={clariesta}
+                  email="clariestaputri21@gmail.com"
+                />
+                <Frame
+                  name="Khusnul Ainia Aprilinda"
+                  img={khusnul}
+                  email="Khusnulainiaaprilinda14@gmail.com"
+                />
               </div>
             </div>
+            <h2 className="">CREATIVE BRANDING DIVISION</h2>
+            <div className="flex flex-col md:flex-row mx-auto mt-5 gap-5">
+              <Frame
+                name="Fajar Putra Cahyadi"
+                img={fajar}
+                email="fajarpc01@gmail.com"
+              />
+              <Frame
+                name="Ridwan Bismi Ahmadih"
+                img={bismi}
+                email="ridwan.bismi03@gmail.com"
+              />
+              <Frame
+                name="Ramadhani Yusdhaliyanti Anwar"
+                img={ramadhani}
+                email="rahmaramadhani50@gmail.com"
+              />
+            </div>
+            <h2>SPONSORSHIP DIVISION</h2>
+            <div className="mx-auto flex flex-col ">
+              <div className="1/4 mx-auto">
+                <Frame
+                  name="Mohammad Fauzan R"
+                  img={fauzan}
+                  email="fauzanchelsea128@gmail.com"
+                />
+              </div>
+              <div className="flex flex-row gap-5">
+                <Frame
+                  name="Daffa Fairuz Izaz"
+                  img={fairuz}
+                  email="daffaxfairuz@gmail.com"
+                />
+                <Frame
+                  name="Kumara Gilang Bahtiaristanto"
+                  img={kum}
+                  email="Kumaragilang76@gmail.com"
+                />
+                <Frame
+                  name="Sabina Rizky Isaura"
+                  img={sabina}
+                  email="isabinarizky@gmail.com"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col gap-5">
+            <h1 className="italic text-7xl font-extrabold">
+              TECHNICAL DIVISION
+            </h1>
+            <h3 className=" ">TECHNICAL MANAGER</h3>
+            <div className="mx-auto w-5/12 ">
+              <Lines color="white" />
+              <div className="w-7/12 mx-auto mt-10">
+                <Frame
+                  name="Ade Rizky Maulana Syafi’i"
+                  img={rizky}
+                  email="aderizky397@gmail.com"
+                />
+              </div>
+              <p className="mx-auto text-justify -mt-10">
+                He is in charge of all technical matters of the vehicle. He has
+                a big role to play in creating a comfortable working atmosphere,
+                directing and supervising staff to work together in achieving
+                the goals of our technical division.
+              </p>
+            </div>
+            <h2 className="mt-10">BODY AND FRAME DIVISION</h2>
+            <div className="mx-auto flex flex-col">
+              <div className="mx-auto">
+                <Frame
+                  name="Marlin Dwi Jaya Kusuma"
+                  img={marlin}
+                  email="marlindwijayakusuma@gmail.com"
+                />
+              </div>
+              <div className="flex flex-row gap-5">
+                <Frame
+                  name="Andi Mulyanto"
+                  img={andi}
+                  email="andimulyanto0909@gmail.com"
+                />
+                <Frame
+                  name="Bagus Kharisma Yulianto"
+                  img={bagus}
+                  email="baguskharisma272@gmail.com"
+                />
+                <Frame
+                  name="Said Ath-thaariq Alattas"
+                  img={said}
+                  email="Thaariqalattas@gmail.com"
+                />
+                <Frame
+                  name="Fa'izul Firdaus"
+                  img={faizul}
+                  email="pulaubuje@gmail.com"
+                />
+              </div>
+            </div>
+
+            <h2 className="mt-10">ELECTRICAL &#38; PROPULSION SYSTEM DIVISION</h2>
+            <div className="mx-auto flex flex-col">
+              <div className="mx-auto">
+                <Frame
+                  name="Sulthan Ariq Prananda"
+                  img={sulthan}
+                  email="sulthanariqq@gmail.com"
+                />
+              </div>
+              <div className="flex flex-row gap-5">
+                <Frame
+                  name="Achmad Yugo M"
+                  img={ahmad}
+                  email="achmadyugomarhadi@gmail.com"
+                />
+                <Frame
+                  name="Muhammad Ichsan Ghifari"
+                  img={ghidfari}
+                  email="ghifargip7@gmail.com"
+                />
+                <Frame
+                  name="Rizal Ashar Mahendra"
+                  img={rizal}
+                  email="rizalashar2000@gmail.com"
+                />
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
