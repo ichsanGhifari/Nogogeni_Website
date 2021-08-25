@@ -1,15 +1,15 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import gm from "../images/Staff/GM.png";
-import Frame from "../components/StaffFrame"
-import Lines from "../components/Lines/index"
+import Frame from "../components/StaffFrame";
+import Lines from "../components/Lines/index";
 
 import intan from "../images/about/staff/finance/IntanFilaMillinia.png";
 import nur from "../images/about/staff/finance/NurAfniWirdaNabila.png";
-
+import misbah from "../images/about/staff/nontechManager/MisbahChoirulHumam.png";
+import rr from "../images/about/staff/administration/RrYuanitaDewiSaresty.png"
 
 const Staff = () => {
-  
   return (
     <section className="w-screen">
       <Navbar />
@@ -50,25 +50,58 @@ const Staff = () => {
         <div className="staff text-center text-white w-full 2xl:w-9/12 mx-auto">
           <div className="w-1/2 mx-auto flex flex-col gap-20">
             <h2>FINANCE DIVISION</h2>
-            <div className='w-5/12 mx-auto flex flex-col'>
-              <Frame name='Intan Fila Millinia' img={intan} email='intanfilam@gmail.com' />
-              <Frame name='Nur Afni Wirda Nabila' img={nur} email='afniwnabila@gmail.com' />
+            <div className="w-5/12 mx-auto flex flex-col">
+              <Frame
+                name="Intan Fila Millinia"
+                img={intan}
+                email="intanfilam@gmail.com"
+              />
+              <Frame
+                name="Nur Afni Wirda Nabila"
+                img={nur}
+                email="afniwnabila@gmail.com"
+              />
             </div>
           </div>
-          <div className=' flex flex-col gap-5 '>
-            <h1 className='italic text-7xl font-extrabold'>NON-TECHNICAL DIVISION</h1>
-            <h3 className=' '>NON-TECHNICAL MANAGER</h3>
-            <div className='mx-auto w-5/12 '> 
-            <Lines color="white"/>
+          <div className=" flex flex-col gap-5 ">
+            <h1 className="italic text-7xl font-extrabold">
+              NON-TECHNICAL DIVISION
+            </h1>
+            <h3 className=" ">NON-TECHNICAL MANAGER</h3>
+            <div className="mx-auto w-5/12 ">
+              <Lines color="white" />
+              <div className="w-7/12 mx-auto mt-10">
+                <Frame
+                  name="Misbah Choirul Humam"
+                  img={misbah}
+                  email="misbah.humam@gmail.com"
+                />
+              </div>
+              <div className="mt-10 mx-auto">
+                <p className='text-justify'>
+                  He is responsible for all non-technical matters on our team.
+                  He has a big role in creating a comfortable working
+                  atmosphere, directing and supervising staff to work together
+                  in achieving the goals of our non-technical division.
+                </p>
+              </div>
+            </div>
+            <div className='w-1/2 mx-auto mt-10 flex flex-row'>
+              <div className='w-6/12 mx-auto'>
+                <Frame name='Rr.Yuanita Dewi Saresty' img={rr} email='yuanitasaresty9@gmail.com' />
+              </div>
+              <div className='flex flex-col'>
+                
+              </div>
             </div>
           </div>
-
         </div>
       </div>
       <style jsx>{`
-        html, body{
-          width:100%;
-          overflow-x:hidden;
+        html,
+        body {
+          width: 100%;
+          overflow-x: hidden;
         }
         .indent {
           text-indent: 30px;
@@ -81,7 +114,7 @@ const Staff = () => {
           background-repeat: no-repeat;
           background-size: 40px 40px;
         }
-        
+
         .title {
           bottom: 0;
         }

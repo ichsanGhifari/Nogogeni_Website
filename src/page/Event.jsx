@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import React from "react";
+import { ViewportProvider,useViewport } from "../components/ViewportProvider";
 import { Swiper, SwiperSlide } from "swiper/react";
 import slide1 from "../images/about/Event/SlideBlack1.png";
 import slide1B from "../images/about/Event/Slideclear1.png";
@@ -22,33 +23,6 @@ import SwiperCore, {
 } from "swiper/core";
 
 SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard]);
-
-const viewportContext = React.createContext({});
-
-const ViewportProvider = ({ children }) => {
-  const [width, setWidth] = React.useState(window.innerWidth);
-  const [height, setHeight] = React.useState(window.innerHeight);
-  const handleWindowResize = () => {
-    setWidth(window.innerWidth);
-    setHeight(window.innerHeight);
-  };
-
-  React.useEffect(() => {
-    window.addEventListener("resize", handleWindowResize);
-    return () => window.removeEventListener("resize", handleWindowResize);
-  }, []);
-
-  return (
-    <viewportContext.Provider value={{ width, height }}>
-      {children}
-    </viewportContext.Provider>
-  );
-};
-
-const useViewport = () => {
-  const { width, height } = React.useContext(viewportContext);
-  return { width, height };
-};
 
 function SlideContent({ status }) {
   if (status === 1) {

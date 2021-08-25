@@ -7,7 +7,7 @@ function Frame(props){
 
     return(
     <section className=" flex flex-col gap-5 h-96 ">
-        <img src={props.img} alt="" onClick={()=>setIsOpen(false)} className={`${isOpen?"cursor-pointer":"cursor-default"}`}></img>
+        <img src={props.img} alt="" onClick={()=>setIsOpen(false)} className={` max-w-xl flex-shrink-0 ${isOpen?"cursor-pointer":"cursor-default"}`}></img>
         <div className={`transform-gpu  duration-300 ${isOpen ? "sideBorder scale-100" :"  scale-90"}`}>
             <div
             className={`transition-opacity duration-500  ${
@@ -38,7 +38,7 @@ function Frame(props){
             linear-gradient(to top, white 2px, transparent 2px) 0% 100%;
  
           background-repeat: no-repeat;
-          background-size: 270px 35px;
+          background-size: 370px 35px;
         }
       
         `}</style>
