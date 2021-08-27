@@ -35,6 +35,20 @@ import ghidfari from "../images/about/staff/electricalPropulsionSystem/MuhammadI
 import rizal from "../images/about/staff/electricalPropulsionSystem/RizalAsharM.png"
 import sulthan from "../images/about/staff/electricalPropulsionSystem/SulthanAriqPrananda.png"
 
+import bagusP from "../images/about/staff/engineDrivetrain/BagusPerwiraPratama.png"
+import reduk from "../images/about/staff/engineDrivetrain/mReduktanjanki.png"
+import yusup from "../images/about/staff/engineDrivetrain/MYusupAffandi.png"
+import yusron from "../images/about/staff/engineDrivetrain/YusronMustafidlolAnam.png"
+
+import agam from "../images/about/staff/vehicleDynamics/AgamWiranataT.png"
+import akhmad from "../images/about/staff/vehicleDynamics/AkhmadAlFairuz.png"
+import ghalib from "../images/about/staff/vehicleDynamics/GhalibFakhrizulAkmal.png"
+import ghita from "../images/about/staff/vehicleDynamics/GhitaTiara.png"
+import bagusA from "../images/about/staff/vehicleDynamics/MochBagusAdi.png"
+import fauziZ from "../images/about/staff/vehicleDynamics/SyahrulFauziZain.png"
+
+
+
 
 const Staff = () => {
   return (
@@ -245,7 +259,7 @@ const Staff = () => {
               </div>
             </div>
 
-            <h2 className="mt-10">ELECTRICAL &#38; PROPULSION SYSTEM DIVISION</h2>
+            <h2 className="">ELECTRICAL &#38; PROPULSION SYSTEM DIVISION</h2>
             <div className="mx-auto flex flex-col">
               <div className="mx-auto">
                 <Frame
@@ -254,7 +268,7 @@ const Staff = () => {
                   email="sulthanariqq@gmail.com"
                 />
               </div>
-              <div className="flex flex-row gap-5">
+              <div className="flex md:flex-row flex-col gap-5">
                 <Frame
                   name="Achmad Yugo M"
                   img={ahmad}
@@ -269,6 +283,72 @@ const Staff = () => {
                   name="Rizal Ashar Mahendra"
                   img={rizal}
                   email="rizalashar2000@gmail.com"
+                />
+              </div>
+            </div>
+
+            <h2 className="">ENGINE AND DRIVETRAIN DIVISION</h2>
+            <div className="mx-auto flex flex-col">
+              <div className="mx-auto">
+                <Frame
+                  name="Muh Yusup Affandi"
+                  img={yusup}
+                  email="sulthanariqq@gmail.com"
+                />
+              </div>
+              <div className="flex md:flex-row flex-col gap-5">
+                <Frame
+                  name="Muhammad Reduktan Janki Dausat"
+                  img={reduk}
+                  email="reduktanzanki@gmail.com"
+                />
+                <Frame
+                  name="Bagus Perwira Pratama"
+                  img={bagusP}
+                  email="cahyodanbagus39@gmail.com"
+                />
+                <Frame
+                  name="Yusron Mustafidlol Anam"
+                  img={yusron}
+                  email="yusron1708@gmail.com"
+                />
+              </div>
+            </div>
+
+            <h2 className="">VEHICLE DYNAMICS DIVISION</h2>
+            <div className="mx-auto flex flex-col">
+              <div className="mx-auto">
+                <Frame
+                  name="Agam Wiranata Trisnakusuma"
+                  img={agam}
+                  email="agam.trisnakusuma@gmail.com"
+                />
+              </div>
+              <div className="flex md:flex-row flex-col gap-5">
+                <Frame
+                  name="Syahrul Fauzi Zain"
+                  img={fauziZ}
+                  email="syahrulfauzi692@gmail.com"
+                />
+                <Frame
+                  name="Akhmad Al Fairuz"
+                  img={akhmad}
+                  email="akhmadalfairuz@gmail.com"
+                />
+                <Frame
+                  name="Ghalib Fakhrizul Akmal"
+                  img={ghalib}
+                  email="ghalibfakhri28@gmail.com"
+                />
+                <Frame
+                  name="Ghita Tiara"
+                  img={ghita}
+                  email="ghitatiara60@gmail.com"
+                />
+                <Frame
+                  name="Moch. Bagus Adi Setiawan"
+                  img={bagusA}
+                  email="adisetiawanbagus7@gmail.com"
                 />
               </div>
             </div>
