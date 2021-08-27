@@ -18,10 +18,10 @@ const NogogeniEvo = () => {
     <section className="h-screen bg-bgherosecond bg-cover bg-no-repeat overflow-hidden">
       <Navbar />
       <div
-        className={`md:left-16 left-40 mt-16 2xl:left-60 top-auto relative transform-gpu duration-700 md:w-max ${
+        className={`md:left-16 left-52 mt-16 2xl:left-60 top-auto relative transform-gpu duration-700 md:w-max ${
           slider
-            ? "md:translate-y-full md:top-20 md:translate-x-0 -translate-x-full"
-            : "md:-translate-y-20 md:-top-20 translate-x-0"
+            ? "md:translate-y-full md:top-24 md:translate-x-0 -translate-x-full"
+            : "md:-translate-y-24 md:-top-32 translate-x-0"
         }`}
       >
         <img
