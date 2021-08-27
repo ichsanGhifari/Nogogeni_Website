@@ -47,9 +47,6 @@ import ghita from "../images/about/staff/vehicleDynamics/GhitaTiara.png"
 import bagusA from "../images/about/staff/vehicleDynamics/MochBagusAdi.png"
 import fauziZ from "../images/about/staff/vehicleDynamics/SyahrulFauziZain.png"
 
-
-
-
 const Staff = () => {
   return (
     <section className="w-screen">
@@ -89,9 +86,9 @@ const Staff = () => {
       </div>
       <div className="bg-black -mt-1 2xl:mt-0 ">
         <div className="staff text-center text-white w-full 2xl:w-9/12 mx-auto">
-          <div className="w-1/2 mx-auto flex flex-col gap-20">
+          <div className="md:w-1/2 w-full mx-auto flex flex-col gap-20">
             <h2>FINANCE DIVISION</h2>
-            <div className="w-6/12 mx-auto flex flex-col">
+            <div className="md:w-6/12 w-full mx-auto flex flex-col">
               <Frame
                 name="Intan Fila Millinia"
                 img={intan}
@@ -105,13 +102,13 @@ const Staff = () => {
             </div>
           </div>
           <div className=" flex flex-col gap-5 ">
-            <h1 className="italic text-7xl font-extrabold">
+            <h1 className="italic md:text-7xl text-4xl font-extrabold">
               NON-TECHNICAL DIVISION
             </h1>
             <h3 className=" ">NON-TECHNICAL MANAGER</h3>
-            <div className="mx-auto w-5/12 ">
+            <div className="mx-auto md:w-5/12 w-full ">
               <Lines color="white" />
-              <div className="w-7/12 mx-auto mt-10">
+              <div className="md:w-7/12 w-full mx-auto mt-10">
                 <Frame
                   name="Misbah Choirul Humam"
                   img={misbah}
@@ -186,7 +183,7 @@ const Staff = () => {
                   email="fauzanchelsea128@gmail.com"
                 />
               </div>
-              <div className="flex flex-row gap-5">
+              <div className="flex md:flex-row  flex-col gap-5">
                 <Frame
                   name="Daffa Fairuz Izaz"
                   img={fairuz}
@@ -206,13 +203,13 @@ const Staff = () => {
             </div>
           </div>
           <div className="flex flex-col gap-5">
-            <h1 className="italic text-7xl font-extrabold">
+            <h1 className="italic md:text-7xl text-4xl font-extrabold">
               TECHNICAL DIVISION
             </h1>
             <h3 className=" ">TECHNICAL MANAGER</h3>
-            <div className="mx-auto w-5/12 ">
+            <div className="mx-auto md:w-5/12 w-full ">
               <Lines color="white" />
-              <div className="w-7/12 mx-auto mt-10">
+              <div className="md:w-7/12 w-full mx-auto mt-10">
                 <Frame
                   name="Ade Rizky Maulana Syafi’i"
                   img={rizky}
@@ -235,7 +232,7 @@ const Staff = () => {
                   email="marlindwijayakusuma@gmail.com"
                 />
               </div>
-              <div className="flex flex-row gap-5">
+              <div className="flex md:flex-row flex-col gap-5">
                 <Frame
                   name="Andi Mulyanto"
                   img={andi}
