@@ -12,6 +12,7 @@ import {
 import { Squash as Hamburger } from "hamburger-react";
 import logo from "../../images/LogoNogen.png";
 import { Menu, Transition, Disclosure } from "@headlessui/react";
+import ScrollLock from "react-scrolllock";
 
 // import { motion } from "framer-motion"
 
@@ -27,7 +28,10 @@ const Navbar = () => {
           </NavLogo>
           <MobileIcon>
             <div className="flex flex-col  ">
-              <Sidebar className={`text-2xl mt-5 flex flex-col gap-5 `} isOpen={isOpen} >
+              <Sidebar
+                className={`text-2xl mt-5 flex flex-col gap-5 `}
+                isOpen={isOpen}
+              >
                 <NavLinksChild to="/">Home</NavLinksChild>
                 <Disclosure>
                   <Disclosure.Button>
@@ -58,7 +62,7 @@ const Navbar = () => {
                 <NavLinksChild to="/Gallery">Gallery</NavLinksChild>
                 <NavLinksChild to="/Contact">Contact</NavLinksChild>
               </Sidebar>
-			  <Hamburger
+              <Hamburger
                 className=""
                 toggled={isOpen}
                 toggle={setOpen}
@@ -127,8 +131,9 @@ const Navbar = () => {
           </NavMenu>
         </div>
       </Nav>
-      <style jsx>{`
-      `}</style>
+
+      <style jsx>{``}</style>
+      <ScrollLock isActive={isOpen}/>
     </div>
   );
 };

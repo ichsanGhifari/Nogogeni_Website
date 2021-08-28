@@ -51,12 +51,12 @@ const Staff = () => {
   return (
     <section className="w-screen">
       <Navbar />
-      <div className="h-screen bg-bgStaff bg-cover">
-        <div className="h-full mt-10 absolute flex md:flex-row flex-col md:gap-24 gap-0 sm:gap-5 z-0">
+      <div className="h-screen relative bg-center bg-bgStaff bg-cover ">
+        <div className="h-full absolute flex md:flex-row flex-col md:gap-24 gap-0 sm:gap-5 z-0">
           <div className="bottom-0 mt-auto md:w-max w-1/2 ">
             <img alt="" src={gm} className=""></img>
           </div>
-          <div className="m-auto md:w-1/3 w-11/12 text-white text-justify indent card md:p-5 p-7">
+          <div className=" m-auto md:w-1/3 w-11/12 text-white text-justify indent card md:p-5 p-7">
             <p className="">
               Nogogeni ITS Team is one of the research teams at the Sepuluh
               Nopember Institute of Technology that conducts research in the
@@ -84,8 +84,9 @@ const Staff = () => {
           </h1>
         </div>
       </div>
-      <div className="bg-black -mt-1 2xl:mt-0 ">
-        <div className="staff text-center text-white w-full 2xl:w-9/12 mx-auto">
+
+      <div className="bg-black  2xl:mt-0 relative -mt-1 z-0 ">
+        <div className="staff text-center text-white w-full 2xl:w-9/12 mx-auto ">
           <div className="md:w-1/2 w-full mx-auto flex flex-col gap-20">
             <h2>FINANCE DIVISION</h2>
             <div className="md:w-6/12 w-full mx-auto flex flex-col">
