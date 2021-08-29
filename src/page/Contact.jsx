@@ -15,7 +15,7 @@ const Contact = () => {
         <img className=" md:p-0 px-7 mx-auto" alt="" src={title}></img>
       </div>
       <div className="w-screen absolute md:top-48 top-48">
-        <div className=" flex flex-col mx-auto md:w-3/4 w-screen px-5 md:gap-0 gap-5">
+        <div className=" flex flex-col mx-auto md:w-3/4 w-screen samsung:px-5 px-0 md:gap-0 gap-5">
           <ContactFrame
             stats={true}
             title="General Manager"
@@ -32,7 +32,7 @@ const Contact = () => {
             number="+62 823-3161-4673"
             email="dimasandi061@gmail.com"
           />
-           <ContactFrame
+          <ContactFrame
             stats={true}
             title="Non-Technical Manager"
             name="Misbah Choirul Humam"
@@ -40,7 +40,7 @@ const Contact = () => {
             number="+62 858-0164-4203"
             email="misbah.humam@gmail.com"
           />
-           <ContactFrame
+          <ContactFrame
             stats={false}
             title="Sponsorship"
             name="Mohammad Fauzan R."
@@ -57,6 +57,9 @@ const Contact = () => {
         }
         @media screen and (max-width: 768px) {
           .card {
+            min-width: 120px;
+            max-width: 120px;
+            margin:auto  0;
             height: 120px;
             width: 120px;
           }

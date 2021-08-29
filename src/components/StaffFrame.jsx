@@ -25,7 +25,7 @@ function Frame(props){
                     <p>{props.name}</p>
                     <p>
                         <FontAwesomeIcon icon={faEnvelope} className="mr-3" />
-                        {props.email}
+                        <a href={"mailto:" + props.email} target='_blank'  rel="noopener noreferrer">{props.email}</a>
                     </p>
                 </div>
             </div>
