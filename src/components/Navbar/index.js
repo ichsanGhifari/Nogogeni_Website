@@ -8,6 +8,7 @@ import {
   NavLinks,
   NavLinksChild,
   Sidebar,
+  Darken,
 } from "./NavbarElements";
 import { Squash as Hamburger } from "hamburger-react";
 import logo from "../../images/LogoNogen.png";
@@ -26,10 +27,11 @@ const Navbar = () => {
           <NavLogo to="/">
             <img alt="" src={logo} className="md:pt-0 pt-1"></img>
           </NavLogo>
+          <Darken isOpen={isOpen}></Darken>
           <MobileIcon>
-            <div className="flex flex-col  ">
+            <div className="flex flex-col ">
               <Sidebar
-                className={`text-2xl mt-5 flex flex-col gap-5 `}
+                className={`text-2xl mt-5 flex flex-col gap-5`}
                 isOpen={isOpen}
               >
                 <NavLinksChild to="/">Home</NavLinksChild>
@@ -131,9 +133,9 @@ const Navbar = () => {
           </NavMenu>
         </div>
       </Nav>
+      <ScrollLock isActive={isOpen} />
 
       <style jsx>{``}</style>
-      <ScrollLock isActive={isOpen}/>
     </div>
   );
 };

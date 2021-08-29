@@ -18,21 +18,33 @@ export const Nav = styled.nav`
 `;
 
 export const Sidebar = styled.div`
-
   background-color: #1e1e1e;
-  width: 20rem;
   overflow: hidden;
-  width:max-content;
+  height:120vh;
   position: fixed;
   top: -90%;
   left: 0;
-  transition: 0.5s ease-in-out;
-  /* transition-timing-function:cubic-bezier(1,.01,.57,.34); */
+  -webkit-transition: left 0.8s ease-out, opacity 0.3s ease 0.3s,padding 0.8s ease-out,width 0.5s ease-in ;
+  -moz-transition: left 0.8s ease-out, opacity 0.3s ease 0.3s,padding 0.8s ease-out,width 0.5s ease-in ;
+  -o-transition: left 0.8s ease-out, opacity 0.3s ease 0.3s,padding 0.8s ease-out,width 0.5s ease-in;
+  transition: left 0.8s ease-out, opacity 0.3s ease 0.3s,padding 0.8s ease-out,width 0.5s ease-in;
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0%")};
   left: ${({ isOpen }) => (isOpen ? "-9rem" : "10rem")};
-  height:${({ isOpen }) => (isOpen ? "100vh":"0")};
-  padding: ${({isOpen}) => (isOpen?"7rem 2.5rem":"0 0")};
-
+  width: ${({ isOpen }) => (isOpen ? "100vh" : "0")};
+  padding: ${({ isOpen }) => (isOpen ? "7rem 2.5rem" : "7rem 0")};
+`;
+export const Darken = styled.div`
+  background-color: black;
+  top: -20px;
+  right: 0;
+  position: absolute;
+  height: 100vh;
+  -webkit-transition:  opacity 0.4s ease ;
+  -moz-transition:  opacity 0.4s ease ;
+  -o-transition:  opacity 0.4s ease;
+  transition:  opacity 0.4s ease;
+  width: ${({ isOpen }) => (isOpen ? "100vh" : "0px")};
+  opacity: ${({ isOpen }) => (isOpen ? "50%" : "0%")};
 `;
 export const NavbarContainer = styled.div`
   display: flex;
