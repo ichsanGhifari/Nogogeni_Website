@@ -24,14 +24,19 @@ export const Sidebar = styled.div`
   position: fixed;
   top: -90%;
   left: 0;
-  -webkit-transition: left 0.8s ease-out, opacity 0.3s ease 0.3s,padding 0.8s ease-out ,width .8s ease-in ;
-  -moz-transition: left 0.8s ease-out, opacity 0.3s ease 0.3s,padding 0.8s ease-out ,width .8s ease-in ;
-  -o-transition: left 0.8s ease-out, opacity 0.3s ease 0.3s,padding 0.8s ease-out ,width .8s ease-in;
-  transition: left 0.8s ease-out, opacity 0.3s ease 0.3s,padding 0.8s ease-out ,width .8s ease-in;
+  -webkit-transition: left 0.8s ease-out, opacity 0.3s ease 0.3s,padding 0.8s ease-out ,width .1s ease-in .3s ;
+  -moz-transition: left 0.8s ease-out, opacity 0.3s ease 0.3s,padding 0.8s ease-out ,width .1s ease-in .3s ;
+  -o-transition: left 0.8s ease-out, opacity 0.3s ease 0.3s,padding 0.8s ease-out ,width .1s ease-in .3s;
+  transition: left 0.8s ease-out, opacity 0.3s ease 0.3s,padding 0.8s ease-out ,width .1s ease-in .3s;
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0%")};
   left: ${({ isOpen }) => (isOpen ? "-9rem" : "10rem")};
-  width: ${({ isOpen }) => (isOpen ? "50vh" : "0")};
+  width: ${({ isOpen }) => (isOpen ? "27vh" : "0")};
   padding: ${({ isOpen }) => (isOpen ? "7rem 2.5rem" : "7rem 0rem")};
+
+  @media screen and (max-width:470px){
+    width: ${({ isOpen }) => (isOpen ? "35vh" : "0")};
+  }
+
 `;
 export const Darken = styled.div`
   background-color: black;
