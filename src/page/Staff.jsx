@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import gm from "../images/Staff/GM.png";
-import Frame from "../components/StaffFrame";
+import Frame from "../components/Staff/StaffFrame";
 import Lines from "../components/Lines/index";
 
 import intan from "../images/about/staff/finance/IntanFilaMillinia.png";
