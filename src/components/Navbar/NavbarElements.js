@@ -20,25 +20,25 @@ export const Nav = styled.nav`
 export const Sidebar = styled.div`
   background-color: #1e1e1e;
   overflow: hidden;
-  height:120vh;
+  height:110vh;
   position: fixed;
   top: -90%;
   left: 0;
-  -webkit-transition: left 0.8s ease-out, opacity 0.3s ease 0.3s,padding 0.8s ease-out,width 0.5s ease-in ;
-  -moz-transition: left 0.8s ease-out, opacity 0.3s ease 0.3s,padding 0.8s ease-out,width 0.5s ease-in ;
-  -o-transition: left 0.8s ease-out, opacity 0.3s ease 0.3s,padding 0.8s ease-out,width 0.5s ease-in;
-  transition: left 0.8s ease-out, opacity 0.3s ease 0.3s,padding 0.8s ease-out,width 0.5s ease-in;
+  -webkit-transition: left 0.8s ease-out, opacity 0.3s ease 0.3s,padding 0.8s ease-out ,width .8s ease-in ;
+  -moz-transition: left 0.8s ease-out, opacity 0.3s ease 0.3s,padding 0.8s ease-out ,width .8s ease-in ;
+  -o-transition: left 0.8s ease-out, opacity 0.3s ease 0.3s,padding 0.8s ease-out ,width .8s ease-in;
+  transition: left 0.8s ease-out, opacity 0.3s ease 0.3s,padding 0.8s ease-out ,width .8s ease-in;
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0%")};
   left: ${({ isOpen }) => (isOpen ? "-9rem" : "10rem")};
-  width: ${({ isOpen }) => (isOpen ? "100vh" : "0")};
-  padding: ${({ isOpen }) => (isOpen ? "7rem 2.5rem" : "7rem 0")};
+  width: ${({ isOpen }) => (isOpen ? "50vh" : "0")};
+  padding: ${({ isOpen }) => (isOpen ? "7rem 2.5rem" : "7rem 0rem")};
 `;
 export const Darken = styled.div`
   background-color: black;
   top: -20px;
   right: 0;
   position: absolute;
-  height: 100vh;
+  height: 110vh;
   -webkit-transition:  opacity 0.4s ease ;
   -moz-transition:  opacity 0.4s ease ;
   -o-transition:  opacity 0.4s ease;
@@ -81,6 +81,7 @@ export const MobileIcon = styled.div`
     color: #fff;
   }
 `;
+
 export const NavMenu = styled.ul`
   display: flex;
   align-items: center;
