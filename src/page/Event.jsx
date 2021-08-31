@@ -81,7 +81,7 @@ function Slide1Desktop() {
           <SlideContent status={1} />
         </div>
       </div>
-      <img alt="" src={status1} className="bottom-0 absolute status"></img>
+      <img alt="" src={status1} className="bottom-0 absolute status "></img>
     </div>
   );
 }
@@ -90,9 +90,9 @@ function Slide1Mobile() {
     <div className="h-screen">
       <div className="flex flex-col relative top-20 gap-5 text-white">
         <div className="z-20 max-w-sm mx-auto">
-          <h1 className="text-6xl font-extrabold italic">FSAE</h1>
+          <h1 className="samsung:text-6xl text-4xl font-extrabold italic">FSAE</h1>
         </div>
-        <img src={slide1B} className="w-3/5 mx-auto" alt=""></img>
+        <img src={slide1B} className="samsung:w-3/5 w-2/4 mx-auto" alt=""></img>
         <p className="font-bold  text-base text-center w-11/12 mx-auto">
           FORMULA SOCIETY OF AUTOMOTIVE ENGINEERING (SAE)
         </p>
@@ -104,7 +104,7 @@ function Slide1Mobile() {
         <img
           alt=""
           src={status1}
-          className="w-4/5  bottom-0 relative mx-auto"
+          className="w-4/5  bottom-0 relative mx-auto samsung:visible hidden"
         ></img>
       </div>
     </div>
