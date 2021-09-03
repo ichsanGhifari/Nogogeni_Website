@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
 import React from "react";
-import { ViewportProvider,useViewport } from "../components/ViewportProvider";
+import { ViewportProvider, useViewport } from "../components/ViewportProvider";
 import { Swiper, SwiperSlide } from "swiper/react";
 import slide1 from "../images/about/Event/SlideBlack1.png";
 import slide1B from "../images/about/Event/Slideclear1.png";
@@ -90,10 +90,12 @@ function Slide1Mobile() {
     <div className="h-screen">
       <div className="flex flex-col relative top-20 gap-5 text-white">
         <div className="z-20 max-w-sm mx-auto">
-          <h1 className="samsung:text-6xl text-4xl font-extrabold italic">FSAE</h1>
+          <h1 className="samsung:text-6xl text-4xl font-extrabold italic">
+            FSAE
+          </h1>
         </div>
         <img src={slide1B} className="samsung:w-3/5 w-2/4 mx-auto" alt=""></img>
-        <p className="font-bold  text-base text-center w-11/12 mx-auto">
+        <p className="font-bold text-base text-center w-11/12 mx-auto">
           FORMULA SOCIETY OF AUTOMOTIVE ENGINEERING (SAE)
         </p>
         <div className="text-justify text-sm -mt-3 px-10 ">
@@ -104,7 +106,7 @@ function Slide1Mobile() {
         <img
           alt=""
           src={status1}
-          className="w-4/5  bottom-0 relative mx-auto samsung:visible hidden"
+          className="w-4/5 bottom-0 relative mx-auto samsung:visible hidden"
         ></img>
       </div>
     </div>
@@ -160,7 +162,7 @@ function Slide3Desktop() {
       <div className="z-20 relative AboutTitle text-white max-w-sm ">
         <h1 className="text-9xl font-extrabold italic">KMHE</h1>
         <p className="font-bold text-left w-11/12 mx-auto">
-            KONTES MOBIL HEMAT ENERGI (KMHE)
+          KONTES MOBIL HEMAT ENERGI (KMHE)
         </p>
       </div>
       <div className="h-screen absolute AboutText max-w-md md:p-0 p-10 text-white ">
@@ -173,30 +175,30 @@ function Slide3Desktop() {
   );
 }
 function Slide3Mobile() {
-    return (
-      <div className="h-screen">
-        <div className="flex flex-col relative top-20 gap-5 text-white">
-          <div className="z-20 max-w-sm mx-auto">
-            <h1 className="text-6xl font-extrabold italic">KMHE</h1>
-          </div>
-          <img src={slide1B} className="w-3/5 mx-auto" alt=""></img>
-          <p className="font-bold  text-base text-center w-11/12 mx-auto">
-            KONTES MOBIL HEMAT ENERGI (KMHE)
-          </p>
-          <div className="text-justify text-sm -mt-3 px-10 ">
-            <SlideContent status={3} />
-          </div>
+  return (
+    <div className="h-screen">
+      <div className="flex flex-col relative top-20 gap-5 text-white">
+        <div className="z-20 max-w-sm mx-auto">
+          <h1 className="text-6xl font-extrabold italic">KMHE</h1>
         </div>
-        <div className="bottom-0 absolute">
-          <img
-            alt=""
-            src={status3}
-            className="w-4/5  bottom-0 relative mx-auto"
-          ></img>
+        <img src={slide1B} className="w-3/5 mx-auto" alt=""></img>
+        <p className="font-bold  text-base text-center w-11/12 mx-auto">
+          KONTES MOBIL HEMAT ENERGI (KMHE)
+        </p>
+        <div className="text-justify text-sm -mt-3 px-10 ">
+          <SlideContent status={3} />
         </div>
       </div>
-    );
-  }
+      <div className="bottom-0 absolute">
+        <img
+          alt=""
+          src={status3}
+          className="w-4/5  bottom-0 relative mx-auto"
+        ></img>
+      </div>
+    </div>
+  );
+}
 
 const Slide = ({ stats }) => {
   const { width } = useViewport();
@@ -205,8 +207,8 @@ const Slide = ({ stats }) => {
     return width < breakpoint ? <Slide1Mobile /> : <Slide1Desktop />;
   } else if (stats === 2) {
     return width < breakpoint ? <Slide2Mobile /> : <Slide2Desktop />;
-  }else if(stats === 3){
-      return width < breakpoint ? <Slide3Mobile /> : <Slide3Desktop />;
+  } else if (stats === 3) {
+    return width < breakpoint ? <Slide3Mobile /> : <Slide3Desktop />;
   }
 };
 

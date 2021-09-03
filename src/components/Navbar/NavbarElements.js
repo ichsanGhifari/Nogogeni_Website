@@ -20,23 +20,26 @@ export const Nav = styled.nav`
 export const Sidebar = styled.div`
   background-color: #1e1e1e;
   overflow: hidden;
-  height:110vh;
+  height: 110vh;
   position: fixed;
   top: -90%;
   left: 0;
-  -webkit-transition: left 0.8s ease-out, opacity 0.3s ease 0.3s,padding 0.8s ease-out ,width .1s ease-in .3s ;
-  -moz-transition: left 0.8s ease-out, opacity 0.3s ease 0.3s,padding 0.8s ease-out ,width .1s ease-in .3s ;
-  -o-transition: left 0.8s ease-out, opacity 0.3s ease 0.3s,padding 0.8s ease-out ,width .1s ease-in .3s;
-  transition: left 0.8s ease-out, opacity 0.3s ease 0.3s,padding 0.8s ease-out ,width .1s ease-in .3s;
+  -webkit-transition: left 0.8s ease-out, opacity 0.3s ease 0.3s,
+    padding 0.8s ease-out, width 0.1s ease-in 0.3s;
+  -moz-transition: left 0.8s ease-out, opacity 0.3s ease 0.3s,
+    padding 0.8s ease-out, width 0.1s ease-in 0.3s;
+  -o-transition: left 0.8s ease-out, opacity 0.3s ease 0.3s,
+    padding 0.8s ease-out, width 0.1s ease-in 0.3s;
+  transition: left 0.8s ease-out, opacity 0.3s ease 0.3s, padding 0.8s ease-out,
+    width 0.1s ease-in 0.3s;
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0%")};
   left: ${({ isOpen }) => (isOpen ? "-12rem" : "10rem")};
   width: ${({ isOpen }) => (isOpen ? "40vh" : "0")};
   padding: ${({ isOpen }) => (isOpen ? "7rem 2.5rem" : "7rem 0rem")};
 
-  @media screen and (min-width:470px){
+  @media screen and (min-width: 470px) {
     width: ${({ isOpen }) => (isOpen ? "40vh" : "0")};
   }
-
 `;
 export const Darken = styled.div`
   background-color: black;
@@ -44,10 +47,10 @@ export const Darken = styled.div`
   right: 0;
   position: absolute;
   height: 110vh;
-  -webkit-transition:  opacity 0.4s ease ;
-  -moz-transition:  opacity 0.4s ease ;
-  -o-transition:  opacity 0.4s ease;
-  transition:  opacity 0.4s ease;
+  -webkit-transition: opacity 0.4s ease;
+  -moz-transition: opacity 0.4s ease;
+  -o-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
   width: ${({ isOpen }) => (isOpen ? "100vh" : "0px")};
   opacity: ${({ isOpen }) => (isOpen ? "50%" : "0%")};
 `;
