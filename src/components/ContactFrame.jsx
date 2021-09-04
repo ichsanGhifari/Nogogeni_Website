@@ -25,7 +25,13 @@ function ContactFrame(props) {
           </div>
           <div className="flex flex-row gap-3 md:mt-1 mt-0">
             <img alt="" className="py-1 icon" src={mail}></img>
-            <a href={"mailto:" + props.email} target='_blank'  rel="noopener noreferrer">{props.email}</a>
+            <a
+              href={"mailto:" + props.email}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {props.email}
+            </a>
           </div>
         </div>
       </div>
@@ -51,7 +57,13 @@ function ContactFrame(props) {
           </div>
           <div className="flex flex-row gap-3 md:mt-1 mt-0">
             <img alt="" className="py-1 icon" src={mail}></img>
-            <a href={"mailto:" + props.email} target='_blank'  rel="noopener noreferrer">{props.email}</a>
+            <a
+              href={"mailto:" + props.email}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {props.email}
+            </a>
           </div>
         </div>
       </div>
