@@ -10,7 +10,7 @@ export const Card = styled.div`
   background: ${({ isOpen }) =>
     isOpen
       ? "linear-gradient(to right, white 2px, transparent 2px) 0 100%, linear-gradient(to right, white 2px, transparent 2px) -583% 100%, linear-gradient(to top, white 2px, transparent 2px) 0% 100%"
-      : ""};
+      : ""};    
   border:${({isOpen})=> (isOpen?"2px solid rgba(255, 255, 255,0)":"2px solid rgba(255, 255, 255,1)")};    
   border-radius:7px;
   background-repeat: no-repeat;
