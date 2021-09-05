@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-
+import {Card} from "./StaffElement"
+ 
 function Frame(props) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -15,19 +16,11 @@ function Frame(props) {
           isOpen ? "cursor-pointer" : "cursor-default"
         }`}
       ></img>
-      <div
-        className={`transform-gpu  duration-300 ${
-          isOpen ? "sideBorder scale-100" : "scale-90"
-        }`}
+      <Card
+        isOpen={isOpen}
+        className=''
       >
-        <div
-          className={`transition-opacity duration-500  ${
-            isOpen
-              ? "cursor-default border-opacity-0"
-              : " cursor-pointer border-opacity-100 w-32 mx-auto  border-2 border-white rounded-md"
-          }`}
-          onClick={() => setIsOpen(true)}
-        >
+        <div onClick={() => setIsOpen(true)}>
           <p
             className={`p-1 transform-gpu duration-500  ${
               isOpen
@@ -38,10 +31,10 @@ function Frame(props) {
             See More
           </p>
           <div
-            className={`px-5 pb-2 -mt-2 transform-gpu duration-500  ${
+            className={`px-2 pb-2 -mt-2 transform-gpu duration-500  ${
               isOpen
                 ? "delay-100 opacity-100 "
-                : " -translate-y-12 opacity-0 h-0 scale-0 "
+                : "-translate-y-full opacity-0 h-0 scale-0 "
             }`}
           >
             <p>{props.name}</p>
@@ -57,18 +50,9 @@ function Frame(props) {
             </p>
           </div>
         </div>
-      </div>
+      </Card>
       <style jsx>{`
-        .sideBorder {
-          transition: 0.5s ease-in all;
-          background: linear-gradient(to right, white 2px, transparent 2px) 0
-              100%,
-            linear-gradient(to left, white 2px, transparent 2px) 100% 100%,
-            linear-gradient(to top, white 2px, transparent 2px) 0% 100%;
-          opacity: 100;
-          background-repeat: no-repeat;
-          background-size: 370px 35px;
-        }
+
       `}</style>
     </section>
   );
