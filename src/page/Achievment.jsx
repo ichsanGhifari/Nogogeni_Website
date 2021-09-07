@@ -320,6 +320,8 @@ const Achievment = () => {
             color:#fff;
             opacity: 1;
             background: rgba(0,0,0,0);
+            transition: 0.15s ease-in;
+
             }
             .swiper-pagination-bullet-active {
                 color:#fff;
