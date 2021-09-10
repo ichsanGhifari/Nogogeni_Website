@@ -91,6 +91,11 @@ const Partner = () => {
           </div>
         </div>
         <style jsx>{`
+        html,
+        body {
+          width: 100%;
+          overflow-x: hidden;
+        }
           .sponsor1 {
             height: 250px;
             width: 300px;
