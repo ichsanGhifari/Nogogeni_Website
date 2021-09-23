@@ -166,7 +166,7 @@ function Mobile() {
 
       <div className="h-screen">
         <div className="m-auto absolute h-screen">
-          <img src={sandi} alt="" className="w-3/5 mx-auto px-10" />
+          <img src={sandi} alt="" className="w-4/5 mx-auto px-10" />
           <div className="text-white w-screen px-5 absolute text-center">
             <p className="font-extrabold half_background text-lg w-max mx-auto px-3 ">
               Sandiaga Salahudin Uno
@@ -199,7 +199,7 @@ function Mobile() {
 
       <div className="h-screen">
         <div className="m-auto  absolute h-screen">
-          <img src={khf} alt="" className="w-3/5 mx-auto px-10" />
+          <img src={khf} alt="" className="w-4/5 mx-auto px-10" />
           <div className="text-white w-screen px-5 absolute text-center">
             <p className="font-extrabold half_background text-lg ">
               Dra. Hj.Khofifah Indar Parawansa,M.Si.

@@ -34,7 +34,7 @@ function Frame(props) {
             className={`px-2 pb-2 -mt-2 transform-gpu duration-500  ${
               isOpen
                 ? "delay-100 opacity-100 "
-                : "-translate-y-full opacity-0 h-0 scale-0 "
+                : "-translate-y-16 opacity-0 h-0 scale-0 "
             }`}
           >
             <p>{props.name}</p>

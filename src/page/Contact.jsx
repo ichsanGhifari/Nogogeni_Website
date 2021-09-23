@@ -51,6 +51,11 @@ const Contact = () => {
         </div>
       </div>
       <style jsx>{`
+        html,
+        body {
+          width: 100%;
+          overflow-x: hidden;
+        }
         .card {
           width: 160px;
           height: 170px;
@@ -59,7 +64,7 @@ const Contact = () => {
           .card {
             min-width: 120px;
             max-width: 120px;
-            margin:auto  0;
+            margin: auto 0;
             height: 120px;
             width: 120px;
           }
