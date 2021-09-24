@@ -62,7 +62,7 @@ const Mark1 = () => {
             ></img>
             <p className="italic font-medium text-xl my-auto">Back</p>
           </Link>
-          <h2 className="italic text-title">
+          <h2 className="italic text-white">
             NOGOGENI RACING <br />
             MARK 1
           </h2>
@@ -73,7 +73,7 @@ const Mark1 = () => {
                 : "delay-100 -translate-x-0 h-0 opacity-100"
             }`}
           >
-            <p className="text-title font-bold">
+            <p className="text-white font-bold">
               This car has a Husaberg 450 FE engine with a <br />
               single cylinder RON 98 fuel type. The chassis <br />
               structure is made of Steel Tube Spaceframe and, 
@@ -85,24 +85,24 @@ const Mark1 = () => {
                 <img alt="" src={steering}></img>
                 <img alt="" src={transmition}></img>
               </div>
-              <div className="flex flex-col gap-5 mt-2 italic font-bold text-title">
+              <div className="flex flex-col gap-5 mt-2 italic font-bold text-white">
                 <p>Rack and Pinion Steering System</p>
                 <p>Sprocket &amp; Chain with Manual Shifter</p>
               </div>
             </div>
             <div className="flex flex-row gap-5 mt-1">
               <div className="flex flex-col">
-                <p className="text-title italic font-bold text title">Wheels</p>
+                <p className="text-white italic font-bold text title">Wheels</p>
                 <div className="bg-title p-2 md:p-3 flex flex-row gap-3">
                   <img className='md:py-0 py-1' alt="" src={wheel}></img>
-                  <p className="italic my-auto text-black">6,4" Wide</p>
+                  <p className="italic my-auto text-whtie">6,4" Wide</p>
                 </div>
               </div>
               <div className="flex flex-col">
-                <p className="text-title italic font-bold text title">Tires</p>
+                <p className="text-white italic font-bold text title">Tires</p>
                 <div className="bg-title md:p-3 p-2 flex flex-row gap-3">
                   <img alt="" className='md:py-0 py-1' src={Tires}></img>
-                  <p className="italic my-auto text-black">
+                  <p className="italic my-auto text-white">
                     180/60 R13 Hoosier
                   </p>
                 </div>

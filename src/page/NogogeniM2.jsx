@@ -62,7 +62,7 @@ const NogogeniM2 = () => {
             ></img>
             <p className="italic font-medium text-xl my-auto">Back</p>
           </Link>
-          <h2 className="italic text-title">NOGOGENI V</h2>
+          <h2 className="italic text-whtie">NOGOGENI V</h2>
           <div
             className={`transform-gpu duration-700 md:text-base ${
               slider
@@ -70,7 +70,7 @@ const NogogeniM2 = () => {
                 : "delay-100 -translate-x-0 h-0 opacity-100"
             }`}
           >
-            <p className="text-title font-bold max-w-md">
+            <p className="text-white font-bold max-w-md">
               This car uses an 110cc fuel injection engine with a pneumatic fuel
               pump and uses ethanol as fuel. An aluminum alloy is used as the
               chassis, and a hydraulic disc brake system is used as the braking
@@ -81,7 +81,7 @@ const NogogeniM2 = () => {
                 <img alt="" src={steering}></img>
                 <img alt="" src={transmition}></img>
               </div>
-              <div className="flex flex-col gap-5 mt-2 italic font-bold text-title">
+              <div className="flex flex-col gap-5 mt-2 italic font-bold text-whtie">
                 <p>Rack and Pinion Steering System</p>
                 <p>Sprocket &amp; Chain with Manual Shifter</p>
               </div>

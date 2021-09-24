@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../components/Footer/Index';
 import {Link} from 'react-router-dom';
 import f1 from '../images/home/f1.png'
 import bg1 from '../images/bgitem.png'
@@ -92,6 +93,7 @@ const Home=()=> {
                 )}
             </SwiperSlide>
         </Swiper>
+        <Footer />
         <style jsx>{`
             .swiper-container {
             width: 100%;
