@@ -1,7 +1,7 @@
 import { MainContainer} from "../components/Glassmorphism/GlassElements"
 import Lines from "../components/Lines"
 import Navbar from "../components/Navbar"
-
+import Footer from "../components/Footer/Index"
 const Team =()=>{
     return(
         <section className='h-screen bg-bgTeam bg-cover bg-no-repeat overflow-hidden bg-center object-fill'>
@@ -19,6 +19,7 @@ const Team =()=>{
                     </div>
                 </MainContainer>
             </div>
+            <Footer />
             <style jsx>{`
                 p{
                     text-indent:30px;

@@ -10,6 +10,7 @@ import kai from "../images/partner/kai.png";
 import Lines2 from "../components/Lines/Lines2";
 import ikoma from "../images/partner/ikoma.png";
 import bki from "../images/partner/bki.png";
+import Footer from "../components/Footer/Index";
 
 const Partner = () => {
   return (
@@ -87,9 +88,11 @@ const Partner = () => {
               <div className="bg-white md:w-3/12 rounded-lg p-5 mx-auto">
                 <img className="m-auto sponsor3" alt="" src={bki}></img>
               </div>
+              <Footer />
             </div>
           </div>
         </div>
+       
         <style jsx>{`
         html,
         body {

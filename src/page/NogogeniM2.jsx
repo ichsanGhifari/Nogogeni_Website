@@ -3,6 +3,7 @@ import et1 from "../images/home/Etanol1.png";
 import rangka1 from "../images/home/rankga/rangka3top.png";
 import rangka2bot from "../images/home/rankga/rangka3bot.png";
 import back from "../icons/Back2.png";
+import Footer from "../components/Footer/Index"
 import steering from "../icons/Steering1.png";
 import body1 from "../icons/Body1.png";
 import chassis from "../icons/Chassis1.png";
@@ -115,6 +116,7 @@ const NogogeniM2 = () => {
           </div>
         </div>
       </div>
+      <Footer />
       <style jsx>{`
         .slicer {
           position: absolute;

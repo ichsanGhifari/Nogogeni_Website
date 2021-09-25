@@ -11,6 +11,7 @@ import chassis from "../icons/Chassis1.png";
 import back from "../icons/Back2.png";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer/Index";
 
 const NogogeniEvo = () => {
   const [slider, setSlider] = useState(false);
@@ -115,6 +116,7 @@ const NogogeniEvo = () => {
           </div>
         </div>
       </div>
+      <Footer />
       <style jsx>{`
         .slicer {
           position: absolute;

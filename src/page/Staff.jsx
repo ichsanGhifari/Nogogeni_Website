@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import gm from "../images/Staff/GM.png";
 import Frame from "../components/Staff/StaffFrame";
 import Lines from "../components/Lines/index";
-
+import Footer from "../components/Footer/Index";
 import intan from "../images/about/staff/finance/IntanFilaMillinia.png";
 import nur from "../images/about/staff/finance/NurAfniWirdaNabila.png";
 import misbah from "../images/about/staff/nontechManager/MisbahChoirulHumam.png";
@@ -30,22 +30,22 @@ import bagus from "../images/about/staff/bodyframe/BagusKharismaYulianto.png";
 import said from "../images/about/staff/bodyframe/SaidAthThaariqA.png";
 import faizul from "../images/about/staff/bodyframe/FaizulFirdaus.png";
 
-import ahmad from "../images/about/staff/electricalPropulsionSystem/AchmadYugoM.png"
-import ghidfari from "../images/about/staff/electricalPropulsionSystem/MuhammadIchsanGhifari.png"
-import rizal from "../images/about/staff/electricalPropulsionSystem/RizalAsharM.png"
-import sulthan from "../images/about/staff/electricalPropulsionSystem/SulthanAriqPrananda.png"
+import ahmad from "../images/about/staff/electricalPropulsionSystem/AchmadYugoM.png";
+import ghidfari from "../images/about/staff/electricalPropulsionSystem/MuhammadIchsanGhifari.png";
+import rizal from "../images/about/staff/electricalPropulsionSystem/RizalAsharM.png";
+import sulthan from "../images/about/staff/electricalPropulsionSystem/SulthanAriqPrananda.png";
 
-import bagusP from "../images/about/staff/engineDrivetrain/BagusPerwiraPratama.png"
-import reduk from "../images/about/staff/engineDrivetrain/mReduktanjanki.png"
-import yusup from "../images/about/staff/engineDrivetrain/MYusupAffandi.png"
-import yusron from "../images/about/staff/engineDrivetrain/YusronMustafidlolAnam.png"
+import bagusP from "../images/about/staff/engineDrivetrain/BagusPerwiraPratama.png";
+import reduk from "../images/about/staff/engineDrivetrain/mReduktanjanki.png";
+import yusup from "../images/about/staff/engineDrivetrain/MYusupAffandi.png";
+import yusron from "../images/about/staff/engineDrivetrain/YusronMustafidlolAnam.png";
 
-import agam from "../images/about/staff/vehicleDynamics/AgamWiranataT.png"
-import akhmad from "../images/about/staff/vehicleDynamics/AkhmadAlFairuz.png"
-import ghalib from "../images/about/staff/vehicleDynamics/GhalibFakhrizulAkmal.png"
-import ghita from "../images/about/staff/vehicleDynamics/GhitaTiara.png"
-import bagusA from "../images/about/staff/vehicleDynamics/MochBagusAdi.png"
-import fauziZ from "../images/about/staff/vehicleDynamics/SyahrulFauziZain.png"
+import agam from "../images/about/staff/vehicleDynamics/AgamWiranataT.png";
+import akhmad from "../images/about/staff/vehicleDynamics/AkhmadAlFairuz.png";
+import ghalib from "../images/about/staff/vehicleDynamics/GhalibFakhrizulAkmal.png";
+import ghita from "../images/about/staff/vehicleDynamics/GhitaTiara.png";
+import bagusA from "../images/about/staff/vehicleDynamics/MochBagusAdi.png";
+import fauziZ from "../images/about/staff/vehicleDynamics/SyahrulFauziZain.png";
 
 const Staff = () => {
   return (
@@ -338,7 +338,9 @@ const Staff = () => {
                   img={ghalib}
                   email="ghalibfakhri28@gmail.com"
                 />
-                <Frame
+              </div>
+              <div className='flex flex-col mx-auto gap-5 md:flex-row'>
+              <Frame
                   name="Ghita Tiara"
                   img={ghita}
                   email="ghitatiara60@gmail.com"
@@ -350,10 +352,11 @@ const Staff = () => {
                 />
               </div>
             </div>
-
+            <Footer />
           </div>
         </div>
       </div>
+
       <style jsx>{`
         html,
         body {

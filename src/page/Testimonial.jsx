@@ -6,6 +6,7 @@ import mentri from "../images/about/testimonial/dahlan.png";
 import mentri2 from "../images/about/testimonial/dahlanFrame.png";
 import sandi from "../images/about/testimonial/sandiaga.png";
 import khf from "../images/about/testimonial/khf.png";
+import Footer from "../components/Footer/Index";
 import { ViewportProvider, useViewport } from "../components/ViewportProvider";
 
 function TestimoniCard() {
@@ -138,6 +139,7 @@ function Desktop() {
         </div>
         <div className=" w-1/2 absolute h-screen ">
           <TestimoniCard />
+      <Footer />
         </div>
       </div>
     </>
@@ -267,6 +269,7 @@ const Testimonial = () => {
       <ViewportProvider>
         <Content />
       </ViewportProvider>
+
       <style jsx>{`
         html,
         body {

@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar";
-
+import Footer from "../components/Footer/Index"
 import title from "../images/contact/contactTitle.png";
 import gm from "../images/contact/GeneralManager.png";
 import tm from "../images/contact/TechnicalManager.png";
@@ -50,6 +50,7 @@ const Contact = () => {
           />
         </div>
       </div>
+      <Footer />
       <style jsx>{`
         html,
         body {

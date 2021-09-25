@@ -12,6 +12,7 @@ import isometri2 from "../images/home/isometri/Isometri21.png";
 
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer/Index";
 
 const Mark1 = () => {
   const [slider, setSlider] = useState(false);
@@ -121,6 +122,7 @@ const Mark1 = () => {
           </div>
         </div>
       </div>
+      <Footer />
       <style jsx>{`
         .slicer {
           position: absolute;

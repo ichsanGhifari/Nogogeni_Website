@@ -33,6 +33,7 @@ import bg2017 from "../images/Achievments/bg2016.png";
 import bg2018 from "../images/Achievments/bg2017.png";
 import bg2019 from "../images/Achievments/bg2018.png";
 import bg2020 from "../images/Achievments/bg2019.png";
+import Footer from "../components/Footer/Index";
 
 SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard]);
 
@@ -253,7 +254,7 @@ const Achievment = () => {
           </div>
         </SwiperSlide>
       </Swiper>
-
+      <Footer />
       <style jsx>{`
         .bgSlide {
           left: 0;

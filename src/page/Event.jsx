@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer/Index"
 import React from "react";
 import { ViewportProvider, useViewport } from "../components/ViewportProvider";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -252,6 +253,7 @@ const Event = () => {
           </div>
         </SwiperSlide>
       </Swiper>
+      <Footer />
       <style jsx>{`
         .AboutTitle {
           top: 20%;
