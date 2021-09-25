@@ -54,7 +54,7 @@ const Partner = () => {
             <div className="flex md:flex-row flex-col justify-center gap-5 mt-10">
               <div className="bg-white rounded-lg md:py-5 md:px-10 p-0 md:w-2/6 w-4/5 mx-auto md:m-0">
                 <img
-                  className="m-auto md:py-5 p-7 sponsor2"
+                  className="m-auto md:py-10 p-7 sponsor2"
                   alt=""
                   src={fuburo}
                 ></img>
@@ -97,7 +97,6 @@ const Partner = () => {
         html,
         body {
           width: 100%;
-          overflow-x: hidden;
         }
           .sponsor1 {
             height: 250px;

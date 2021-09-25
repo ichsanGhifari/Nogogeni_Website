@@ -10,11 +10,20 @@ import {
   Sidebar,
   Darken,
 } from "./NavbarElements";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faInstagram,
+  faTwitter,
+  faFacebook,
+  faYoutube,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
+import mail from "../../icons/envelope.png";
 import { Squash as Hamburger } from "hamburger-react";
 import logo from "../../images/LogoNogen.png";
 import { Menu, Transition, Disclosure } from "@headlessui/react";
 import ScrollLock from "react-scrolllock";
-
+// import Footer from "../Footer/Index"
 // import { motion } from "framer-motion"
 
 const Navbar = () => {
@@ -63,6 +72,92 @@ const Navbar = () => {
                 <NavLinksChild to="/Partner">Partner</NavLinksChild>
                 <NavLinksChild to="/Gallery">Gallery</NavLinksChild>
                 <NavLinksChild to="/Contact">Contact</NavLinksChild>
+                <div className="flex flex-row absolute bottom-36 gap-3 -ml-5 ">
+                    <a
+                      href={"https://www.instagram.com/nogogeni_its"}
+                      className="rounded-full"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div className="border-2 rounded-full bg-gray-400 border-gray-400 w-8 h-8">
+                        <FontAwesomeIcon
+                          icon={faInstagram}
+                          className="fa-md m-auto h-full flex "
+                          color="black"
+                        />
+                      </div>
+                    </a>
+                    <a
+                      href={"https://twitter.com/Nogogeni_ITS"}
+                      className="rounded-full"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div className="border-2 rounded-full bg-gray-400 border-gray-400 w-8 h-8">
+                        <FontAwesomeIcon
+                          icon={faTwitter}
+                          className="fa-md m-auto h-full flex "
+                          color="black"
+                        />
+                      </div>
+                    </a>
+                    <a
+                      href={"https://www.facebook.com/NogogeniITS/"}
+                      className="rounded-full"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div className="border-2 rounded-full bg-gray-400 border-gray-400 w-8 h-8">
+                        <FontAwesomeIcon
+                          icon={faFacebook}
+                          className="fa-md m-auto h-full flex"
+                          color="black"
+                        />
+                      </div>
+                    </a>
+                    <a
+                      href={
+                        "https://www.youtube.com/channel/UCU7D-__KLegTFYhnrlitbzg"
+                      }
+                      className="rounded-full"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div className="border-2 rounded-full bg-gray-400 border-gray-400 w-8 h-8">
+                        <FontAwesomeIcon
+                          icon={faYoutube}
+                          className="fa-md m-auto h-full flex"
+                          color="black"
+                        />
+                      </div>
+                    </a>
+                    <a
+                      href={"mailto:nogogeni.its@gmail.com"}
+                      className="rounded-full"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div className="border-2 rounded-full bg-gray-400 border-gray-400 w-8 h-8">
+                        <img src={mail} alt="" className="p-1" />
+                      </div>
+                    </a>
+                    <a
+                      href={
+                        "https://www.linkedin.com/company/nogogeni-its-team/mycompany/"
+                      }
+                      className="rounded-full"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div className="border-2 rounded-full bg-gray-400 border-gray-400 w-8 h-8">
+                        <FontAwesomeIcon
+                          icon={faLinkedin}
+                          className="fa-md m-auto h-full flex"
+                          color="black"
+                        />
+                      </div>
+                    </a>
+                  </div>
               </Sidebar>
               <Hamburger
                 className=""
@@ -91,7 +186,7 @@ const Navbar = () => {
                   leaveFrom="transform scale-100 opacity-100"
                   leaveTo="transform scale-0 opacity-0"
                 >
-                  <Menu.Items className=" z-50 flex-col gap-2 flex italic absolute text-left px-4 mt-2 bg-black rounded-xl py-2 bg-opacity-80 ">
+                  <Menu.Items className=" z-50 flex-col gap-2 flex italic absolute text-left px-4 mt-2 bg-title rounded-lg py-2 bg-opacity-90 ">
                     <Menu.Item>
                       {({ active }) => (
                         <NavLinksChild to="/Team">Team</NavLinksChild>
@@ -115,6 +210,7 @@ const Navbar = () => {
                       )}
                     </Menu.Item>
                   </Menu.Items>
+                  
                 </Transition>
               </div>
             </Menu>
