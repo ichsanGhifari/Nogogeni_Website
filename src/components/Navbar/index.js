@@ -84,14 +84,14 @@ const Navbar = () => {
                   About
                 </Menu.Button>
                 <Transition
-                  enter="transition duration-100 ease-out"
-                  enterFrom="transform scale-0 opacity-0"
+                  enter="transition duration-300 ease-out"
+                  enterFrom="transform scale-0 opacity-0 "
                   enterTo="transform scale-100 opacity-100"
-                  leave="transition duration-75 ease-out"
+                  leave="transition duration-300 ease-out"
                   leaveFrom="transform scale-100 opacity-100"
                   leaveTo="transform scale-0 opacity-0"
                 >
-                  <Menu.Items className=" z-50 flex-col gap-2 flex italic absolute text-left px-4 mt-2 ">
+                  <Menu.Items className=" z-50 flex-col gap-2 flex italic absolute text-left px-4 mt-2 bg-black rounded-xl py-2 bg-opacity-80 ">
                     <Menu.Item>
                       {({ active }) => (
                         <NavLinksChild to="/Team">Team</NavLinksChild>
