@@ -72,7 +72,7 @@ const Navbar = () => {
                 <NavLinksChild to="/Partner">Partner</NavLinksChild>
                 <NavLinksChild to="/Gallery">Gallery</NavLinksChild>
                 <NavLinksChild to="/Contact">Contact</NavLinksChild>
-                <div className="flex flex-row absolute bottom-44 gap-3 -ml-5 ">
+                <div className="flex flex-row absolute bottom-36 gap-3 -ml-5 ">
                     <a
                       href={"https://www.instagram.com/nogogeni_its"}
                       className="rounded-full"
