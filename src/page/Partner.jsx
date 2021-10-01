@@ -79,11 +79,7 @@ const Partner = () => {
                 <img className="m-auto pb-5 sponsor3" alt="" src={petro}></img>
               </div>
               <div className="bg-white md:w-3/12 w-7/12 rounded-lg p-5 mx-auto">
-                <img
-                  className=" mx-auto py-10"
-                  alt=""
-                  src={woody}
-                ></img>
+                <img className=" mx-auto py-10" alt="" src={woody}></img>
               </div>
               <div className="bg-white md:w-3/12 rounded-lg p-5 mx-auto">
                 <img className="m-auto sponsor3" alt="" src={bki}></img>
@@ -92,12 +88,13 @@ const Partner = () => {
             </div>
           </div>
         </div>
-       
+
         <style jsx>{`
-        html,
-        body {
-          width: 100%;
-        }
+          html,
+          body {
+            width: 100%;
+            overflow-x: hidden;
+          }
           .sponsor1 {
             height: 250px;
             width: 300px;
@@ -118,6 +115,10 @@ const Partner = () => {
             .sponsor2 {
               height: 130px;
               width: 100x;
+            }
+            html,
+            body {
+              overflow-x: visible;
             }
           }
         `}</style>

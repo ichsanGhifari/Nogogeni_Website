@@ -29,8 +29,8 @@ const Contact = () => {
             title="Technical Manager"
             name="Ade Rizky Maulana Syafi’i"
             img={tm}
-            number="+62 823-3161-4673"
-            email="dimasandi061@gmail.com"
+            number="+62 858-5556-0060"
+            email="aderizky397@gmail.com"
           />
           <ContactFrame
             stats={true}

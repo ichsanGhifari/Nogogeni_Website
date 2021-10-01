@@ -138,8 +138,20 @@ function Desktop() {
           </div>
         </div>
         <div className=" w-1/2 absolute h-screen ">
-          <TestimoniCard />
-      <Footer />
+          <MainContainer className="text-white md:w-2/3 w-full md:p-10 p-7 m-auto top-1/4 relative">
+            <p className="text-justify m-auto md:text-base text-sm md:leading-normal leading-tight">
+              “The Nogogeni ITS Team has succeeded in making energy-efficient
+              and environmentally friendly cars and participating in national
+              and international events such as KMHE, SEM Asia, and Formula
+              Student. I congratulate you because the previous generations have
+              achieved great achievements both nationally and internationally. I
+              also really support and pray that the Nogoggeni ITS Team will
+              always work hard to find new solutions. Congratulations on
+              thinking, working, and innovating so that the Nogogeni ITS Team
+              car can be more efficient.”
+            </p>
+          </MainContainer>
+          <Footer />
         </div>
       </div>
     </>
@@ -248,7 +260,19 @@ function Mobile() {
             </div>
           </div>
           <div className="mt-10 px-5 ">
-            <TestimoniCard />
+            <MainContainer className="text-white md:w-2/3 w-full md:p-10 p-7 m-auto top-1/4 relative">
+              <p className="text-justify m-auto md:text-base text-sm md:leading-normal leading-tight">
+                “The Nogogeni ITS Team has succeeded in making energy-efficient
+                and environmentally friendly cars and participating in national
+                and international events such as KMHE, SEM Asia, and Formula
+                Student. I congratulate you because the previous generations
+                have achieved great achievements both nationally and
+                internationally. I also really support and pray that the
+                Nogoggeni ITS Team will always work hard to find new solutions.
+                Congratulations on thinking, working, and innovating so that the
+                Nogogeni ITS Team car can be more efficient.”
+              </p>
+            </MainContainer>
           </div>
         </div>
       </div>
