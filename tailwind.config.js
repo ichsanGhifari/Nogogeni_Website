@@ -18,12 +18,33 @@ module.exports = {
       },
       backgroundImage: theme => ({
         'bghero': "url('/src/images/bgitem.png')",
-        'bgherosecond': "url('/src/images/home/bgmerah.png')"
+        'bgherosecond': "url('/src/images/home/bgmerah.png')",
+        'bgTeam':"url('/src/images/about/BackgroundTeam.png')",
+        'bgPartner':"url('/src/images/partner/bgpartner.png')",
+        'bgGallery' : "url('/src/images/gallery/bgGallery.png')",
+        'bgContact' : "url('/src/images/contact/bgcontact.png')",
+        'bgStaff' : "url('/src/images/Staff/bgStaff.png')",
+        'bgTest' : "url('/src/images/about/testimonial/bgTestimonial.png')",
+
       }),
+      translate: {
+        'spe': '0.2rem',
+        '1/7': '14.2857143%',
+        '2/7': '28.5714286%',
+        '3/7': '42.8571429%',
+        '4/7': '57.1428571%',
+        '5/7': '71.4285714%',
+        '6/7': '85.7142857%',
+       },
+       screens: {
+        'samsung': '370px',
+        // => @media (min-width: 640px) { ... }
+      },
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+  ],
 };
